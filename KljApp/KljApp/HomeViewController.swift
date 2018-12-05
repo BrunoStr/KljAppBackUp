@@ -2,16 +2,24 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var weerLabel: UILabel!
+    @IBOutlet weak var beschrijvingLabel: UILabel!
     @IBOutlet weak var temperatuurLabel: UILabel!
     @IBOutlet weak var luchtvochtigheidLabel: UILabel!
+    @IBOutlet weak var weerImg: UIImageView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
     let weerController = WeerController()
-    var weerObj:Weer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        beschrijvingLabel.isHidden = true
+        temperatuurLabel.isHidden = true
+        luchtvochtigheidLabel.isHidden = true
+        weerImg.isHidden = true
+        spinner.isHidden = false
+        spinner.startAnimating()
         
         weerController.fetchWeerInfo { (weer) in
             if let weer = weer {
@@ -22,12 +30,20 @@ class HomeViewController: UIViewController {
     
     func updateUI(with weer: Weer){
         DispatchQueue.main.async {
-            var temp = round(weer.temperatuur)
-            var luchtVocht = round(weer.luchtvochtigheid)
+            let temp = round(weer.temperatuur)
+            let luchtVocht = (weer.luchtvochtigheid * 100)
             
-            self.weerLabel.text = weer.beschrijving
-            self.temperatuurLabel.text = "\(temp)°C"
-            self.luchtvochtigheidLabel.text = "\(luchtVocht)%"
+            self.beschrijvingLabel.text = weer.beschrijving
+            self.temperatuurLabel.text = "Temperatuur: \(temp) °C"
+            self.luchtvochtigheidLabel.text = String(luchtVocht) + " %"
+            self.weerImg.image = UIImage(named: "\(weer.icon)")
+            
+            self.beschrijvingLabel.isHidden = false
+            self.temperatuurLabel.isHidden = false
+            self.luchtvochtigheidLabel.isHidden = false
+            self.weerImg.isHidden = false
+            self.spinner.isHidden = true
+            self.spinner.stopAnimating()
         }
     }
     
