@@ -18,41 +18,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beschrijving..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJb-K9-Pqw">
-                                <rect key="frame" x="134" y="323.5" width="107.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatuur..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-tH-vID">
-                                <rect key="frame" x="132" y="402" width="111" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luchtvochtigheid..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-Of-jRE">
-                                <rect key="frame" x="114" y="492" width="147" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cjs-I3-qx1">
+                                <rect key="frame" x="10" y="74" width="355" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="upG-an-1d3">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="egc-Dd-usI"/>
+                                            <constraint firstAttribute="width" constant="60" id="mVX-5e-zEB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-q9-QnA">
+                                        <rect key="frame" x="110" y="0.0" width="245" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Beschrijving: Zeer bewolkte dag" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJb-K9-Pqw">
+                                                <rect key="frame" x="0.0" y="0.0" width="245" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Temperatuur: 100°C" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-tH-vID">
+                                                <rect key="frame" x="0.0" y="20" width="245" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="Luchtvochtigheid: 89%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-Of-jRE">
+                                                <rect key="frame" x="0.0" y="40" width="245" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <rect key="contentStretch" x="0.10000000000000001" y="0.0" width="1" height="1"/>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xev-z7-hwF">
+                                <rect key="frame" x="177" y="303" width="20" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.04830961332" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0hb-Of-jRE" firstAttribute="centerY" secondItem="9Fa-fs-ttw" secondAttribute="centerY" constant="169" id="9ra-Oa-5VS"/>
-                            <constraint firstItem="WuC-tH-vID" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="GqR-R3-lco"/>
-                            <constraint firstItem="0hb-Of-jRE" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="TOD-nQ-cxD"/>
-                            <constraint firstItem="WuC-tH-vID" firstAttribute="centerY" secondItem="9Fa-fs-ttw" secondAttribute="centerY" constant="79" id="a3Y-H1-Gq1"/>
-                            <constraint firstItem="iJb-K9-Pqw" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="qF3-ME-wwH"/>
-                            <constraint firstItem="iJb-K9-Pqw" firstAttribute="centerY" secondItem="9Fa-fs-ttw" secondAttribute="centerY" id="zMd-xs-QJ4"/>
+                            <constraint firstItem="cjs-I3-qx1" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="6Lk-5S-2Zx"/>
+                            <constraint firstItem="cjs-I3-qx1" firstAttribute="top" secondItem="0os-Jt-xLL" secondAttribute="top" constant="10" id="zch-yM-ugB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0os-Jt-xLL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="Hxc-89-BWG"/>
                     <connections>
+                        <outlet property="beschrijvingLabel" destination="iJb-K9-Pqw" id="sTg-M6-hlj"/>
                         <outlet property="luchtvochtigheidLabel" destination="0hb-Of-jRE" id="VyM-Wh-mle"/>
+                        <outlet property="spinner" destination="xev-z7-hwF" id="UrW-Bx-ltk"/>
                         <outlet property="temperatuurLabel" destination="WuC-tH-vID" id="Ugb-sr-ryI"/>
-                        <outlet property="weerLabel" destination="iJb-K9-Pqw" id="kO7-0K-ok5"/>
+                        <outlet property="weerImg" destination="upG-an-1d3" id="nZc-of-2dT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsR-Rb-jtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
