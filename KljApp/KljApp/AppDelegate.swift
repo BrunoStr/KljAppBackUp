@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  KljApp
-//
-//  Created by Bruno Stroobants on 05/12/2018.
-//  Copyright © 2018 Bruno Stroobants. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

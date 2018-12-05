@@ -13,14 +13,47 @@
         <!--Home-->
         <scene sceneID="6Q1-kC-KwT">
             <objects>
-                <viewController id="E7E-bh-gcu" sceneMemberID="viewController">
+                <viewController id="E7E-bh-gcu" customClass="HomeViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Fa-fs-ttw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beschrijving..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJb-K9-Pqw">
+                                <rect key="frame" x="134" y="323.5" width="107.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatuur..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-tH-vID">
+                                <rect key="frame" x="132" y="402" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luchtvochtigheid..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-Of-jRE">
+                                <rect key="frame" x="114" y="492" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0hb-Of-jRE" firstAttribute="centerY" secondItem="9Fa-fs-ttw" secondAttribute="centerY" constant="169" id="9ra-Oa-5VS"/>
+                            <constraint firstItem="WuC-tH-vID" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="GqR-R3-lco"/>
+                            <constraint firstItem="0hb-Of-jRE" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="TOD-nQ-cxD"/>
+                            <constraint firstItem="WuC-tH-vID" firstAttribute="centerY" secondItem="9Fa-fs-ttw" secondAttribute="centerY" constant="79" id="a3Y-H1-Gq1"/>
+                            <constraint firstItem="iJb-K9-Pqw" firstAttribute="centerX" secondItem="9Fa-fs-ttw" secondAttribute="centerX" id="qF3-ME-wwH"/>
+                            <constraint firstItem="iJb-K9-Pqw" firstAttribute="centerY" secondItem="9Fa-fs-ttw" secondAttribute="centerY" id="zMd-xs-QJ4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0os-Jt-xLL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="Hxc-89-BWG"/>
+                    <connections>
+                        <outlet property="luchtvochtigheidLabel" destination="0hb-Of-jRE" id="VyM-Wh-mle"/>
+                        <outlet property="temperatuurLabel" destination="WuC-tH-vID" id="Ugb-sr-ryI"/>
+                        <outlet property="weerLabel" destination="iJb-K9-Pqw" id="kO7-0K-ok5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsR-Rb-jtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,7 +62,7 @@
         <!--Kalender-->
         <scene sceneID="72O-gZ-4OC">
             <objects>
-                <tableViewController id="gez-Xt-eog" sceneMemberID="viewController">
+                <tableViewController id="gez-Xt-eog" customClass="KalenderTableViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jZQ-rB-sd4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +91,7 @@
         <!--Drankenlijst-->
         <scene sceneID="OtJ-9f-b7l">
             <objects>
-                <tableViewController id="buX-uB-CbL" sceneMemberID="viewController">
+                <tableViewController id="buX-uB-CbL" customClass="DrankenLijstTableViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7p4-hz-Afw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +176,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oDP-bg-nic" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fjb-Bf-wST">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
