@@ -15,6 +15,10 @@ class OverOnsViewController: UIViewController {
     @IBOutlet weak var pic3: UIImageView!
     @IBOutlet weak var pic4: UIImageView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tussenTitleLabel1: UILabel!
+    @IBOutlet weak var TussenTitleLabel2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +33,15 @@ class OverOnsViewController: UIViewController {
         
         pic4.layer.cornerRadius = 15
         pic4.clipsToBounds = true
+        
+        titleLabel.layer.cornerRadius = 15
+        titleLabel.clipsToBounds = true
+        
+        tussenTitleLabel1.layer.cornerRadius = 15
+        tussenTitleLabel1.clipsToBounds = true
+        
+        TussenTitleLabel2.layer.cornerRadius = 15
+        TussenTitleLabel2.clipsToBounds = true
 
     }
     

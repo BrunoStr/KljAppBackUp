@@ -304,17 +304,17 @@
                                                     <constraint firstAttribute="height" constant="46" id="nRW-PZ-rIC"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-Cl-9SP">
                                                 <rect key="frame" x="1" y="89" width="351" height="113"/>
+                                                <color key="backgroundColor" red="0.5450980392" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="113" id="boQ-Ph-wdh"/>
                                                 </constraints>
                                                 <string key="text">KLJ vissenaken is een jeugdbeweging die al meer dan 85 jaar actief is. De jeugdbeweging houdt zich vooral bezig met de jeugd een leuke tijd te bezorgen in de weekends.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Fh-s8-9hZ">
@@ -330,13 +330,14 @@
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJy-O4-0r1">
                                                 <rect key="frame" x="4" y="378" width="345.5" height="136"/>
+                                                <color key="backgroundColor" red="0.5450980392" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="136" id="Lvq-FU-XcQ"/>
                                                 </constraints>
                                                 <string key="text">Daarnaast werkt KLJ Vissenaken ook aan dorpsactiviteiten om de goede relatie en samenwerking met de andere Vissenakers te behouden. Ons hoofddoel is echter sfeer, ambiance en plezier maken in ons geweldige dorpje.
 </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-tG-Wau">
@@ -378,10 +379,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Klj Vissenaken" largeTitleDisplayMode="never" id="med-8X-z3n"/>
                     <connections>
+                        <outlet property="TussenTitleLabel2" destination="wJy-O4-0r1" id="ZRD-85-AlA"/>
                         <outlet property="pic1" destination="fkK-yM-LBg" id="ZTe-v9-elp"/>
                         <outlet property="pic2" destination="9gs-MY-wMN" id="Oc2-bz-0IO"/>
                         <outlet property="pic3" destination="0Vh-bU-tPO" id="qde-qK-GgW"/>
                         <outlet property="pic4" destination="ist-I0-uOY" id="czj-VY-p3e"/>
+                        <outlet property="titleLabel" destination="ahx-hA-Sh6" id="29J-6U-XCs"/>
+                        <outlet property="tussenTitleLabel1" destination="HrG-Cl-9SP" id="mV3-Xq-h2O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpR-TJ-bXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
