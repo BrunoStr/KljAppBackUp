@@ -21,6 +21,9 @@ class HomeViewController: UIViewController {
         // Hier zet men de kleur van de notificationbar naar wit, ookal zet men hier .black (Bug)
         navigationController?.navigationBar.barStyle = .black
         
+        //Hier zet men de kleur van de back button van de show segue naar wit
+        navigationController?.navigationBar.tintColor = .white
+        
         beschrijvingLabel.isHidden = true
         temperatuurLabel.isHidden = true
         luchtvochtigheidLabel.isHidden = true
@@ -33,7 +36,13 @@ class HomeViewController: UIViewController {
         
         weerController.fetchWeerInfo { (weer) in
             if let weer = weer {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
                 self.updateUI(with: weer)
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            }else{
+                let alert = UIAlertController(title: "Geen connectie", message: "Check je verbinding en probeer het opnieuw.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Sluit", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
@@ -43,7 +52,7 @@ class HomeViewController: UIViewController {
         DispatchQueue.main.async {
             let temp = round(weer.temperatuur)
             let luchtVocht = (weer.luchtvochtigheid * 100)
-            
+
             self.beschrijvingLabel.text = weer.beschrijving
             self.temperatuurLabel.text = "Temperatuur: \(temp) °C"
             self.luchtvochtigheidLabel.text = "Luchtvochtigheid: " + String(luchtVocht) + " %"
