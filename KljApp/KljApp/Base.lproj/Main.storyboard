@@ -304,6 +304,7 @@
                                                     <constraint firstAttribute="height" constant="46" id="nRW-PZ-rIC"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-Cl-9SP">
@@ -395,22 +396,87 @@
         <!--Contact-->
         <scene sceneID="IXI-sY-yxd">
             <objects>
-                <viewController id="mkT-ko-xxY" sceneMemberID="viewController">
+                <viewController id="mkT-ko-xxY" customClass="ContactViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwU-RJ-cLP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9d-It-r5K">
-                                <rect key="frame" x="157" y="323" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwa-dQ-c7H">
+                                <rect key="frame" x="0.0" y="20" width="375" height="637"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="29r-Ht-kdP">
+                                        <rect key="frame" x="0.0" y="38" width="375" height="332"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3up-I1-6IT">
+                                                <rect key="frame" x="162.5" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6SD-lO-97M"/>
+                                                    <constraint firstAttribute="width" constant="50" id="wE7-ar-gpc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like onze Facebook pagina voor de laatste updates!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9d-It-r5K">
+                                                <rect key="frame" x="51" y="68" width="273.5" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="WUu-bv-EQU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xn-PR-myh">
+                                                <rect key="frame" x="83.5" y="127" width="208" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ixd-EB-0Yz"/>
+                                                </constraints>
+                                                <state key="normal" title="Ontdek onze Facebook pagina"/>
+                                                <connections>
+                                                    <action selector="fbBtnTapped:" destination="mkT-ko-xxY" eventType="touchUpInside" id="BSD-Lh-bb4"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gY4-Ol-VfI">
+                                                <rect key="frame" x="162.5" y="175" width="50" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volg onze Instagram pagina voor de leukste sfeerfoto's" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-zJ-hem">
+                                                <rect key="frame" x="19" y="243" width="337.5" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="LBn-22-ch1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuK-a1-161">
+                                                <rect key="frame" x="82.5" y="302" width="210" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ne8-Hx-5kb"/>
+                                                </constraints>
+                                                <state key="normal" title="Ontdek onze Instagram pagina"/>
+                                                <connections>
+                                                    <action selector="instagramBtnTapped:" destination="mkT-ko-xxY" eventType="touchUpInside" id="SPf-KB-Ww6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="332" id="Jf0-S8-YLh"/>
+                                            <constraint firstItem="3up-I1-6IT" firstAttribute="leading" secondItem="gY4-Ol-VfI" secondAttribute="leading" id="d09-z9-bby"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="29r-Ht-kdP" firstAttribute="leading" secondItem="qwa-dQ-c7H" secondAttribute="leading" id="5Za-H8-fbT"/>
+                                    <constraint firstItem="29r-Ht-kdP" firstAttribute="centerX" secondItem="qwa-dQ-c7H" secondAttribute="centerX" id="6sX-6n-K1k"/>
+                                    <constraint firstItem="29r-Ht-kdP" firstAttribute="top" secondItem="qwa-dQ-c7H" secondAttribute="top" constant="38" id="jP4-Xa-gz5"/>
+                                    <constraint firstAttribute="trailing" secondItem="29r-Ht-kdP" secondAttribute="trailing" id="jqI-N7-D6r"/>
+                                    <constraint firstAttribute="bottom" secondItem="29r-Ht-kdP" secondAttribute="bottom" constant="35" id="ngU-wW-jQY"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="U9d-It-r5K" firstAttribute="centerY" secondItem="hwU-RJ-cLP" secondAttribute="centerY" id="0gm-xD-yY8"/>
-                            <constraint firstItem="U9d-It-r5K" firstAttribute="centerX" secondItem="hwU-RJ-cLP" secondAttribute="centerX" id="0jr-Ib-t0N"/>
+                            <constraint firstAttribute="bottom" secondItem="qwa-dQ-c7H" secondAttribute="bottom" constant="10" id="E1s-jz-cJs"/>
+                            <constraint firstItem="qwa-dQ-c7H" firstAttribute="leading" secondItem="mvv-U4-Jje" secondAttribute="leading" id="GgW-S1-nwe"/>
+                            <constraint firstItem="qwa-dQ-c7H" firstAttribute="top" secondItem="mvv-U4-Jje" secondAttribute="top" id="cMG-AZ-BfH"/>
+                            <constraint firstAttribute="trailing" secondItem="qwa-dQ-c7H" secondAttribute="trailing" id="vbb-9a-2KZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mvv-U4-Jje"/>
                     </view>
@@ -418,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NyM-DG-kzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4933" y="-1072"/>
+            <point key="canvasLocation" x="4932" y="-1072.7136431784108"/>
         </scene>
         <!--Onze Leiding-->
         <scene sceneID="wbS-ms-3GM">
@@ -601,7 +667,9 @@
         <image name="KljPic6" width="960" height="720"/>
         <image name="calendar" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
+        <image name="fbLogo" width="224.63999938964844" height="224.63999938964844"/>
         <image name="home" width="30" height="30"/>
+        <image name="instaLogo" width="300" height="300"/>
         <image name="kljPic1" width="1944" height="1296"/>
     </resources>
 </document>
