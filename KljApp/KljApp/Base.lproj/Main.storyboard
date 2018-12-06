@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oDP-bg-nic">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,14 +16,14 @@
             <objects>
                 <viewController id="E7E-bh-gcu" customClass="HomeViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Fa-fs-ttw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhK-F1-O30">
-                                <rect key="frame" x="0.0" y="111" width="320" height="408"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-AS-T8a">
-                                        <rect key="frame" x="25" y="18" width="270" height="70"/>
+                                        <rect key="frame" x="25" y="18" width="325" height="70"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="KljLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3cZ-ht-Lc3">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -32,7 +32,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Welkom op de app van Klj Vissenaken!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCF-aj-wOq">
-                                                <rect key="frame" x="78" y="0.0" width="192" height="70"/>
+                                                <rect key="frame" x="78" y="0.0" width="247" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -43,22 +43,22 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MT8-PE-F9g">
-                                        <rect key="frame" x="2" y="110" width="316" height="160"/>
+                                        <rect key="frame" x="2" y="110" width="371" height="160"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xoL-WZ-JDg">
-                                                <rect key="frame" x="10" y="20" width="296" height="114"/>
+                                                <rect key="frame" x="10" y="20" width="351" height="114"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actuele weer in Vissenaken" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrz-Xw-Vaz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="296" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="351" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xev-z7-hwF">
-                                                        <rect key="frame" x="0.0" y="29" width="296" height="20"/>
+                                                        <rect key="frame" x="0.0" y="29" width="351" height="20"/>
                                                     </activityIndicatorView>
                                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cjs-I3-qx1">
-                                                        <rect key="frame" x="0.0" y="54" width="296" height="60"/>
+                                                        <rect key="frame" x="0.0" y="54" width="351" height="60"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="upG-an-1d3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
@@ -67,22 +67,22 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-q9-QnA">
-                                                                <rect key="frame" x="80" y="0.0" width="216" height="60"/>
+                                                                <rect key="frame" x="80" y="0.0" width="271" height="60"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Beschrijving: Zeer bewolkte dag" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJb-K9-Pqw">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="216" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="271" height="20"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Temperatuur: 100°C" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-tH-vID">
-                                                                        <rect key="frame" x="0.0" y="20" width="216" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="20" width="271" height="20"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="Luchtvochtigheid: 89%" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-Of-jRE">
-                                                                        <rect key="frame" x="0.0" y="40" width="216" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="40" width="271" height="20"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKc-Cv-Xu7">
-                                        <rect key="frame" x="0.0" y="314" width="320" height="181"/>
+                                        <rect key="frame" x="0.0" y="314" width="375" height="181"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="181" id="kqD-Y6-nye"/>
                                         </constraints>
@@ -167,21 +167,21 @@
             <objects>
                 <tableViewController id="cJS-2S-aiZ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NPZ-T0-y3B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="Y5P-G5-s80">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="1" id="fiI-BZ-mrm">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fiI-BZ-mrm" id="ApX-G3-Ly9">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="0.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhZ-Y2-gIF">
-                                                    <rect key="frame" x="16" y="11" width="262" height="0.0"/>
+                                                    <rect key="frame" x="16" y="11" width="317" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -196,10 +196,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="m2S-KU-fZW">
-                                        <rect key="frame" x="0.0" y="1" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="1" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m2S-KU-fZW" id="LOT-YZ-nCO">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Over Klj Vissenaken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEF-ij-cTD">
@@ -221,14 +221,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="R1c-DL-Ihc">
-                                        <rect key="frame" x="0.0" y="61" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="61" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R1c-DL-Ihc" id="Vg3-ZS-S2D">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onze Leiding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drd-q2-gmL">
-                                                    <rect key="frame" x="16" y="11" width="262" height="38"/>
+                                                    <rect key="frame" x="16" y="11" width="317" height="38"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -246,10 +246,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="3oQ-JN-FI9">
-                                        <rect key="frame" x="0.0" y="121" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="121" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3oQ-JN-FI9" id="pl6-Oc-kRY">
-                                            <rect key="frame" x="0.0" y="0.0" width="286" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCF-1R-OoS">
@@ -284,44 +284,120 @@
             </objects>
             <point key="canvasLocation" x="3896" y="-1490"/>
         </scene>
-        <!--Over Klj Vissenaken-->
+        <!--Klj Vissenaken-->
         <scene sceneID="lpJ-AJ-ZGa">
             <objects>
-                <viewController id="86M-Ti-1WT" sceneMemberID="viewController">
+                <viewController id="86M-Ti-1WT" customClass="OverOnsViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SmD-DS-Ph9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Over KLJ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-hA-Sh6">
-                                <rect key="frame" x="125" y="273.5" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kN-cX-AjN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="687"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="a7p-rJ-kid">
+                                        <rect key="frame" x="11" y="8" width="353" height="647"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wie we zijn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-hA-Sh6">
+                                                <rect key="frame" x="125.5" y="0.0" width="102.5" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="nRW-PZ-rIC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-Cl-9SP">
+                                                <rect key="frame" x="1" y="89" width="351" height="113"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="113" id="boQ-Ph-wdh"/>
+                                                </constraints>
+                                                <string key="text">KLJ vissenaken is een jeugdbeweging die al meer dan 85 jaar actief is. De jeugdbeweging houdt zich vooral bezig met de jeugd een leuke tijd te bezorgen in de weekends.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Fh-s8-9hZ">
+                                                <rect key="frame" x="0.0" y="245" width="353" height="90"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kljPic1" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-yM-LBg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="90"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic3" translatesAutoresizingMaskIntoConstraints="NO" id="9gs-MY-wMN">
+                                                        <rect key="frame" x="186.5" y="0.0" width="166.5" height="90"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJy-O4-0r1">
+                                                <rect key="frame" x="4" y="378" width="345.5" height="136"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="136" id="Lvq-FU-XcQ"/>
+                                                </constraints>
+                                                <string key="text">Daarnaast werkt KLJ Vissenaken ook aan dorpsactiviteiten om de goede relatie en samenwerking met de andere Vissenakers te behouden. Ons hoofddoel is echter sfeer, ambiance en plezier maken in ons geweldige dorpje.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-tG-Wau">
+                                                <rect key="frame" x="0.0" y="557" width="353" height="90"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic6" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-bU-tPO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="90"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic5" translatesAutoresizingMaskIntoConstraints="NO" id="ist-I0-uOY">
+                                                        <rect key="frame" x="186.5" y="0.0" width="166.5" height="90"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="647" id="U1Z-eS-k6A"/>
+                                            <constraint firstItem="3tf-tG-Wau" firstAttribute="top" secondItem="a7p-rJ-kid" secondAttribute="top" constant="557" id="f4m-zv-jlQ"/>
+                                            <constraint firstItem="HrG-Cl-9SP" firstAttribute="leading" secondItem="a7p-rJ-kid" secondAttribute="leading" constant="1" id="oan-bz-KH7"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="a7p-rJ-kid" secondAttribute="trailing" constant="11" id="Ala-3f-4uw"/>
+                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="leading" secondItem="4kN-cX-AjN" secondAttribute="leading" constant="11" id="Jrd-xJ-fnn"/>
+                                    <constraint firstAttribute="bottom" secondItem="a7p-rJ-kid" secondAttribute="bottom" constant="32" id="gps-XK-S4F"/>
+                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="centerX" secondItem="4kN-cX-AjN" secondAttribute="centerX" id="r6A-b8-A9T"/>
+                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="top" secondItem="4kN-cX-AjN" secondAttribute="topMargin" id="yXZ-Pt-oni"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ahx-hA-Sh6" firstAttribute="centerX" secondItem="SmD-DS-Ph9" secondAttribute="centerX" id="cRW-Kn-PZl"/>
-                            <constraint firstItem="ahx-hA-Sh6" firstAttribute="centerY" secondItem="SmD-DS-Ph9" secondAttribute="centerY" id="se8-RJ-rNJ"/>
+                            <constraint firstItem="4kN-cX-AjN" firstAttribute="top" secondItem="RWG-Fa-CZJ" secondAttribute="top" id="OkL-hu-j2q"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4kN-cX-AjN" secondAttribute="bottom" constant="-40" id="RW3-la-fiE"/>
+                            <constraint firstItem="4kN-cX-AjN" firstAttribute="leading" secondItem="SmD-DS-Ph9" secondAttribute="leading" id="wE2-mG-qVE"/>
+                            <constraint firstAttribute="trailing" secondItem="4kN-cX-AjN" secondAttribute="trailing" id="zki-Hy-oOf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RWG-Fa-CZJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Over Klj Vissenaken" largeTitleDisplayMode="never" id="med-8X-z3n"/>
+                    <navigationItem key="navigationItem" title="Klj Vissenaken" largeTitleDisplayMode="never" id="med-8X-z3n"/>
+                    <connections>
+                        <outlet property="pic1" destination="fkK-yM-LBg" id="ZTe-v9-elp"/>
+                        <outlet property="pic2" destination="9gs-MY-wMN" id="Oc2-bz-0IO"/>
+                        <outlet property="pic3" destination="0Vh-bU-tPO" id="qde-qK-GgW"/>
+                        <outlet property="pic4" destination="ist-I0-uOY" id="czj-VY-p3e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpR-TJ-bXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4914" y="-1872"/>
+            <point key="canvasLocation" x="4911.1999999999998" y="-1873.313343328336"/>
         </scene>
         <!--Contact-->
         <scene sceneID="IXI-sY-yxd">
             <objects>
                 <viewController id="mkT-ko-xxY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwU-RJ-cLP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9d-It-r5K">
-                                <rect key="frame" x="129.5" y="273.5" width="61" height="21"/>
+                                <rect key="frame" x="157" y="323" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -345,11 +421,11 @@
             <objects>
                 <viewController id="inj-xi-Go2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5Z-qW-3rk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onze Leiding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iW-jP-q8p">
-                                <rect key="frame" x="110" y="273.5" width="100" height="21"/>
+                                <rect key="frame" x="137.5" y="323" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -373,15 +449,15 @@
             <objects>
                 <tableViewController id="gez-Xt-eog" customClass="KalenderTableViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jZQ-rB-sd4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qMe-sJ-opR">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qMe-sJ-opR" id="e0n-d3-7Zd">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -402,15 +478,15 @@
             <objects>
                 <tableViewController id="buX-uB-CbL" customClass="DrankenLijstTableViewController" customModule="KljApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7p4-hz-Afw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="B5B-rg-3Oe">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B5B-rg-3Oe" id="n0S-EL-Wro">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -432,7 +508,7 @@
                 <navigationController id="jou-cQ-Lp7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Drankenlijst" image="coins" id="3qP-sd-Yfn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Oie-FE-6on">
-                        <rect key="frame" x="0.0" y="20" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90980392160000001" green="0.24313725489999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -453,7 +529,7 @@
                 <navigationController id="lLz-ub-lgO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Kalender" image="calendar" id="B73-qh-aAy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="cZi-uq-Ty0">
-                        <rect key="frame" x="0.0" y="20" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90980392160000001" green="0.24313725489999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -475,7 +551,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="Ivd-CF-hz3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Ios-20-PAe">
-                        <rect key="frame" x="0.0" y="20" width="320" height="91"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.90980392156862744" green="0.24313725490196078" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -516,8 +592,12 @@
     </scenes>
     <resources>
         <image name="KljLogo" width="250" height="259"/>
+        <image name="KljPic3" width="960" height="720"/>
+        <image name="KljPic5" width="960" height="720"/>
+        <image name="KljPic6" width="960" height="720"/>
         <image name="calendar" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
+        <image name="kljPic1" width="1944" height="1296"/>
     </resources>
 </document>

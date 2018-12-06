@@ -16,6 +16,7 @@
 		C440647D21B7EFB000B44BE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647C21B7EFB000B44BE4 /* HomeViewController.swift */; };
 		C440647F21B7F05000B44BE4 /* Weer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647E21B7F05000B44BE4 /* Weer.swift */; };
 		C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440648021B7F6B200B44BE4 /* WeerController.swift */; };
+		C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430B21B9B48700A0858A /* OverOnsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C440647C21B7EFB000B44BE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C440647E21B7F05000B44BE4 /* Weer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weer.swift; sourceTree = "<group>"; };
 		C440648021B7F6B200B44BE4 /* WeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeerController.swift; sourceTree = "<group>"; };
+		C46D430B21B9B48700A0858A /* OverOnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverOnsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				C440647C21B7EFB000B44BE4 /* HomeViewController.swift */,
 				C440647E21B7F05000B44BE4 /* Weer.swift */,
 				C440648021B7F6B200B44BE4 /* WeerController.swift */,
+				C46D430B21B9B48700A0858A /* OverOnsViewController.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C440647921B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift in Sources */,
+				C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */,
 				C440647B21B7EF9E00B44BE4 /* KalenderTableViewController.swift in Sources */,
 				C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */,
 				C440647F21B7F05000B44BE4 /* Weer.swift in Sources */,
