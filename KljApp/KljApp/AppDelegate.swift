@@ -7,7 +7,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        //Dit stelt de kleur in van de niet-geselecteerde items van de tabController
+        UITabBar.appearance().unselectedItemTintColor = UIColor(displayP3Red: 255, green: 255, blue: 255, alpha: 1)
+        
+
         return true
     }
 

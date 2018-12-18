@@ -16,6 +16,8 @@
 		C440647D21B7EFB000B44BE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647C21B7EFB000B44BE4 /* HomeViewController.swift */; };
 		C440647F21B7F05000B44BE4 /* Weer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647E21B7F05000B44BE4 /* Weer.swift */; };
 		C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440648021B7F6B200B44BE4 /* WeerController.swift */; };
+		C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430B21B9B48700A0858A /* OverOnsViewController.swift */; };
+		C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430D21B9C11500A0858A /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C440647C21B7EFB000B44BE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C440647E21B7F05000B44BE4 /* Weer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weer.swift; sourceTree = "<group>"; };
 		C440648021B7F6B200B44BE4 /* WeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeerController.swift; sourceTree = "<group>"; };
+		C46D430B21B9B48700A0858A /* OverOnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverOnsViewController.swift; sourceTree = "<group>"; };
+		C46D430D21B9C11500A0858A /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,9 @@
 		C440646521B7CB3900B44BE4 /* KljApp */ = {
 			isa = PBXGroup;
 			children = (
+				C4C015A521B964280091A851 /* HomeScreen */,
 				C440646621B7CB3900B44BE4 /* AppDelegate.swift */,
-				C440647E21B7F05000B44BE4 /* Weer.swift */,
-				C440648021B7F6B200B44BE4 /* WeerController.swift */,
 				C440646A21B7CB3900B44BE4 /* Main.storyboard */,
-				C440647C21B7EFB000B44BE4 /* HomeViewController.swift */,
 				C440647A21B7EF9E00B44BE4 /* KalenderTableViewController.swift */,
 				C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */,
 				C440646D21B7CB3A00B44BE4 /* Assets.xcassets */,
@@ -74,6 +76,18 @@
 				C440647221B7CB3A00B44BE4 /* Info.plist */,
 			);
 			path = KljApp;
+			sourceTree = "<group>";
+		};
+		C4C015A521B964280091A851 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C440647C21B7EFB000B44BE4 /* HomeViewController.swift */,
+				C440647E21B7F05000B44BE4 /* Weer.swift */,
+				C440648021B7F6B200B44BE4 /* WeerController.swift */,
+				C46D430B21B9B48700A0858A /* OverOnsViewController.swift */,
+				C46D430D21B9C11500A0858A /* ContactViewController.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C440647921B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift in Sources */,
+				C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */,
+				C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */,
 				C440647B21B7EF9E00B44BE4 /* KalenderTableViewController.swift in Sources */,
 				C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */,
 				C440647F21B7F05000B44BE4 /* Weer.swift in Sources */,

@@ -4,6 +4,11 @@ class DrankenLijstTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Dit stelt de kleur van de LargeTitle in. Werkt niet via de attribute inspector (Bug)
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        // Hier zet men de kleur van de notificationbar naar wit, ookal zet men hier .black (Bug)
+        navigationController?.navigationBar.barStyle = .black
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
