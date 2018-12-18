@@ -597,6 +597,7 @@
                                 <constraints>
                                     <constraint firstItem="xEY-Le-18B" firstAttribute="centerY" secondItem="FDM-5j-Zbn" secondAttribute="centerY" id="Qu8-AG-GDd"/>
                                     <constraint firstItem="xEY-Le-18B" firstAttribute="centerX" secondItem="FDM-5j-Zbn" secondAttribute="centerX" id="Uhf-vh-UIU"/>
+                                    <constraint firstItem="xEY-Le-18B" firstAttribute="leading" secondItem="FDM-5j-Zbn" secondAttribute="leading" constant="117" id="fya-Io-Doa"/>
                                     <constraint firstItem="xEY-Le-18B" firstAttribute="top" secondItem="FDM-5j-Zbn" secondAttribute="top" constant="10" id="tcT-wE-wkX"/>
                                 </constraints>
                             </view>
@@ -750,25 +751,25 @@
                                 <rect key="frame" x="0.0" y="442" width="375" height="225"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-aV-ooC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="268.5"/>
+                                        <rect key="frame" x="17.5" y="0.0" width="340" height="288.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-kJ-b7w">
-                                                <rect key="frame" x="165" y="0.0" width="45" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="143.5" y="0.0" width="53.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-c5-sak">
-                                                <rect key="frame" x="77" y="29" width="221" height="20"/>
+                                                <rect key="frame" x="113.5" y="29" width="113" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum:" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGe-SX-Bxg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-bd-VmI">
-                                                        <rect key="frame" x="111.5" y="0.0" width="109.5" height="20"/>
+                                                        <rect key="frame" x="57.5" y="0.0" width="55.5" height="20"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -776,22 +777,22 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-B3-Nav">
-                                                <rect key="frame" x="5" y="57" width="365" height="20.5"/>
+                                                <rect key="frame" x="5" y="57" width="330" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Van:" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUh-4p-RwB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kse-MH-58p">
-                                                        <rect key="frame" x="79" y="0.0" width="99" height="20.5"/>
+                                                        <rect key="frame" x="71.5" y="0.0" width="90" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tot:" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-my-k7e">
-                                                        <rect key="frame" x="182" y="0.0" width="77" height="20.5"/>
+                                                        <rect key="frame" x="165.5" y="0.0" width="77" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="77" id="pG4-zu-iFe"/>
                                                         </constraints>
@@ -800,7 +801,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3W-Z5-vMp">
-                                                        <rect key="frame" x="263" y="0.0" width="102" height="20.5"/>
+                                                        <rect key="frame" x="246.5" y="0.0" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -808,7 +809,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-v2-3wU">
-                                                <rect key="frame" x="0.0" y="85.5" width="375" height="183"/>
+                                                <rect key="frame" x="0.0" y="85.5" width="340" height="203"/>
                                                 <string key="text">Vandaag spelen we dropping. Lukt het jou om zo lang mogelijk uit de leiding zijn handen te blijven? Lukt het jou om zo lang mogelijk uit de handen van de leiding te vlijven? Er staat eeen dikke prijs op het spel! Vandaag spelen we dropping. Lukt het jou om zo lang mogelijk uit de leiding zijn handen te blijven? Lukt het jou om zo lang mogelijk uit de handen van de leiding te vlijven? Er staat eeen dikke prijs op het spel!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -816,10 +817,10 @@
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="340" id="0w0-at-BJW"/>
                                             <constraint firstItem="CtK-kJ-b7w" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="EUL-7f-GS6"/>
                                             <constraint firstItem="aUQ-B3-Nav" firstAttribute="top" secondItem="wkK-aV-ooC" secondAttribute="top" constant="57" id="End-20-SpS"/>
                                             <constraint firstItem="aUQ-B3-Nav" firstAttribute="leading" secondItem="wkK-aV-ooC" secondAttribute="leading" constant="5" id="I5s-kR-FaI"/>
-                                            <constraint firstItem="z9z-c5-sak" firstAttribute="leading" secondItem="wkK-aV-ooC" secondAttribute="leading" constant="77" id="ICG-Zq-eRs"/>
                                             <constraint firstItem="z9z-c5-sak" firstAttribute="top" secondItem="wkK-aV-ooC" secondAttribute="top" constant="29" id="Nw8-Uk-FDA"/>
                                             <constraint firstItem="z9z-c5-sak" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="O5Y-HV-zoU"/>
                                             <constraint firstItem="6y7-v2-3wU" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="g5X-Tq-t4P"/>
@@ -829,17 +830,17 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="wkK-aV-ooC" secondAttribute="bottom" constant="-3.5" id="G1m-2r-VGf"/>
-                                    <constraint firstItem="wkK-aV-ooC" firstAttribute="leading" secondItem="hkN-RU-HRM" secondAttribute="leading" id="emL-rR-q5k"/>
+                                    <constraint firstAttribute="trailing" secondItem="wkK-aV-ooC" secondAttribute="trailing" constant="17" id="TGm-Ia-7SY"/>
+                                    <constraint firstItem="wkK-aV-ooC" firstAttribute="centerX" secondItem="hkN-RU-HRM" secondAttribute="centerX" id="fOp-Yt-E6Q"/>
                                     <constraint firstItem="wkK-aV-ooC" firstAttribute="top" secondItem="hkN-RU-HRM" secondAttribute="top" id="h15-jo-LZ3"/>
-                                    <constraint firstAttribute="trailing" secondItem="wkK-aV-ooC" secondAttribute="trailing" id="oil-Xu-rrZ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FDM-5j-Zbn" firstAttribute="top" secondItem="R9H-g0-wE5" secondAttribute="top" id="DY3-ow-gim"/>
-                            <constraint firstItem="wkK-aV-ooC" firstAttribute="width" secondItem="FDM-5j-Zbn" secondAttribute="width" id="HYc-e1-mCt"/>
                             <constraint firstItem="F1b-AN-8oB" firstAttribute="top" secondItem="FDM-5j-Zbn" secondAttribute="bottom" id="NG6-q0-jox"/>
+                            <constraint firstItem="hkN-RU-HRM" firstAttribute="top" secondItem="8Ej-J8-EqQ" secondAttribute="top" constant="442" id="OrK-Pr-hv5"/>
                             <constraint firstItem="hkN-RU-HRM" firstAttribute="trailing" secondItem="R9H-g0-wE5" secondAttribute="trailing" id="Sm7-vt-UaS"/>
                             <constraint firstItem="F1b-AN-8oB" firstAttribute="trailing" secondItem="R9H-g0-wE5" secondAttribute="trailing" id="VmC-a3-EkU"/>
                             <constraint firstItem="F1b-AN-8oB" firstAttribute="top" secondItem="8Ej-J8-EqQ" secondAttribute="top" constant="160" id="cky-gs-KZy"/>
