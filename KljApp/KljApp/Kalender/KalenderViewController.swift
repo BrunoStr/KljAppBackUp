@@ -38,20 +38,37 @@ class KalenderViewController: UIViewController {
     
     func handleCellTextColor(view: JTAppleCell?, cellState: CellState){
         guard let validCell = view as? KalenderCustomCell else {return}
-
-        //Wanneer de cell niet geselecteerd is, zullen de dagen buiten de maand mindere opacity krijgen dan de dagen van de maand
-        if cellState.isSelected {
-            validCell.dateLabel.textColor = .white
+        
+        let todaysDate = Date()
+        
+        dateFormatter.dateFormat = "dd MM yyyy"
+        //Ik vorm Date objecten om naar strings omdat Date minuten, uren, ... bezitten en string niet.
+        let todaysDateString = dateFormatter.string(from: todaysDate)
+        let selectedDateString = dateFormatter.string(from: cellState.date)
+        
+        //Hier check ik of datum van vandaag overeenkomt met de geselecteerde datum
+        if todaysDateString == selectedDateString{
+            validCell.today.isHidden = false
+            validCell.selectedView.isHidden = true
         }else{
-            if cellState.dateBelongsTo == .thisMonth{
-                let monthcolor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
-                validCell.dateLabel.textColor = monthcolor
+            
+            //Wanneer de cell niet geselecteerd is, zullen de dagen buiten de maand mindere opacity krijgen dan de dagen van de maand
+            if cellState.isSelected {
+                validCell.dateLabel.textColor = .white
             }else{
-                let outsidemonthcolor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.3)
-                validCell.dateLabel.textColor = outsidemonthcolor
+                if cellState.dateBelongsTo == .thisMonth{
+                    let monthcolor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+                    validCell.dateLabel.textColor = monthcolor
+                }else{
+                    let outsidemonthcolor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.3)
+                    validCell.dateLabel.textColor = outsidemonthcolor
+                }
+                
             }
             
         }
+
+       
         
     }
     
@@ -62,6 +79,7 @@ class KalenderViewController: UIViewController {
             validCell.selectedView.isHidden = false
         }else{
             validCell.selectedView.isHidden = true
+            validCell.today.isHidden = true
         }
 
     }
