@@ -20,6 +20,7 @@
 		C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430D21B9C11500A0858A /* ContactViewController.swift */; };
 		C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */; };
 		C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */; };
+		C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D601CF21C974A6009F92E5 /* Activiteit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderCustomCell.swift; sourceTree = "<group>"; };
 		C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderViewController.swift; sourceTree = "<group>"; };
 		C4D4D33AE833FF6FEDFC380A /* Pods-KljApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KljApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KljApp/Pods-KljApp.release.xcconfig"; sourceTree = "<group>"; };
+		C4D601CF21C974A6009F92E5 /* Activiteit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activiteit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */,
 				C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */,
+				C4D601CF21C974A6009F92E5 /* Activiteit.swift */,
 			);
 			path = Kalender;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */,
 				C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */,
 				C440647F21B7F05000B44BE4 /* Weer.swift in Sources */,
+				C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */,
 				C440646721B7CB3900B44BE4 /* AppDelegate.swift in Sources */,
 				C440647D21B7EFB000B44BE4 /* HomeViewController.swift in Sources */,
 			);

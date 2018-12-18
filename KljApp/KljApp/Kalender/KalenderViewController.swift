@@ -8,9 +8,33 @@ class KalenderViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var maandLabel: UILabel!
     @IBOutlet weak var jaarLabel: UILabel!
+    @IBOutlet weak var activiteitNaam: UILabel!
+    @IBOutlet weak var activiteitOmschrijving: UILabel!
+    @IBOutlet weak var activiteitDatum: UILabel!
+    @IBOutlet weak var activiteitStartUur: UILabel!
+    @IBOutlet weak var activiteitEindUur: UILabel!
+    
+    let todaysDate = Date()
+    var eventsFromServer: [String:Activiteit] = [:]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Hier zetten we een timer zodat het lijkt dat we met server praten
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+            let serverObjects = self.getServerEvents()
+            
+            //Hier converten we de dictionary [date:string] naar [string:string]
+            for(date, event) in serverObjects {
+                let stringData = self.dateFormatter.string(from: date)
+                self.eventsFromServer[stringData] = event
+            }
+        }
+        
+        DispatchQueue.main.async {
+            self.calendarView.reloadData()
+        }
         
         //Dit stelt de kleur van de LargeTitle in. Werkt niet via de attribute inspector (Bug)
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -18,9 +42,8 @@ class KalenderViewController: UIViewController {
         navigationController?.navigationBar.barStyle = .black
         
         setUpCalendarView()
-        
-        
     }
+    
     
     func setUpCalendarView(){
         
@@ -38,8 +61,6 @@ class KalenderViewController: UIViewController {
     
     func handleCellTextColor(view: JTAppleCell?, cellState: CellState){
         guard let validCell = view as? KalenderCustomCell else {return}
-        
-        let todaysDate = Date()
         
         dateFormatter.dateFormat = "dd MM yyyy"
         //Ik vorm Date objecten om naar strings omdat Date minuten, uren, ... bezitten en string niet.
@@ -68,8 +89,6 @@ class KalenderViewController: UIViewController {
             
         }
 
-       
-        
     }
     
     func handleCellSelected(view: JTAppleCell?, cellState: CellState){
@@ -77,6 +96,19 @@ class KalenderViewController: UIViewController {
         
         if cellState.isSelected {
             validCell.selectedView.isHidden = false
+            
+            if eventsFromServer.contains(where: {$0.key == dateFormatter.string(from: cellState.date)} ){
+                if let activiteit = self.eventsFromServer[dateFormatter.string(from: cellState.date)] {
+                    self.activiteitNaam.text = activiteit.naam
+                    dateFormatter.dateFormat = "dd/MM/yyyy"
+                    self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
+                    self.activiteitStartUur.text = "\(activiteit.startUur) Uur"
+                    self.activiteitEindUur.text = "\(activiteit.eindUur) Uur"
+                    self.activiteitOmschrijving.text = activiteit.omschrijving
+                }
+                
+            }
+            
         }else{
             validCell.selectedView.isHidden = true
             validCell.today.isHidden = true
@@ -157,4 +189,18 @@ extension KalenderViewController: JTAppleCalendarViewDelegate {
         
     }
     
+}
+
+extension KalenderViewController {
+    func getServerEvents() -> [Date:Activiteit]{
+        dateFormatter.dateFormat = "dd MM yyyy"
+        
+        return [
+            dateFormatter.date(from: "22 12 2018")!: Activiteit(naam: "Hallo", omschrijving: "Dit is activiteit 1: We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!Dit is activiteit 1: We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00"),
+            dateFormatter.date(from: "23 12 2018")!: Activiteit(naam: "Hoy", omschrijving: "Dit is activiteit 2", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00"),
+            dateFormatter.date(from: "24 12 2018")!: Activiteit(naam: "Beste", omschrijving: "Dit is activiteit 3", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00"),
+            dateFormatter.date(from: "25 12 2018")!: Activiteit(naam: "Gey", omschrijving: "Dit is activiteit 4", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00")
+
+        ]
+    }
 }
