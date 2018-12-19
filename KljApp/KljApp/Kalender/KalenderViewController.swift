@@ -101,10 +101,10 @@ class KalenderViewController: UIViewController {
                 if let activiteit = self.eventsFromServer[dateFormatter.string(from: cellState.date)] {
                     self.activiteitUrenStackView.isHidden = false
                     self.activiteitOmschrijving.isHidden = false
-                    self.activiteitLeeftijd.isHidden = false
                     
                     self.activiteitNaam.text = activiteit.naam
                     self.activiteitLeeftijd.setTitle(activiteit.leeftijdsgroep, for: .normal)
+                    self.activiteitLeeftijd.backgroundColor = UIColor(displayP3Red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
                     dateFormatter.dateFormat = "dd/MM/yyyy"
                     self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
                     self.activiteitStartUur.text = "\(activiteit.startUur) Uur"
@@ -113,12 +113,13 @@ class KalenderViewController: UIViewController {
                 }
                 
             }else{
-                self.activiteitNaam.text = "Geen activiteit vandaag"
+                self.activiteitNaam.text = "Geen activiteit"
                 dateFormatter.dateFormat = "dd/MM/yyyy"
                 self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
                 self.activiteitUrenStackView.isHidden = true
                 self.activiteitOmschrijving.isHidden = true
-                self.activiteitLeeftijd.isHidden = true
+                self.activiteitLeeftijd.setTitle("😥", for: .normal)
+                self.activiteitLeeftijd.backgroundColor = UIColor.white
             }
             
         }else{
@@ -253,10 +254,10 @@ extension KalenderViewController {
         dateFormatter.dateFormat = "dd MM yyyy"
         
         return [
-            dateFormatter.date(from: "22 12 2018")!: Activiteit(naam: "Hallo", omschrijving: "Dit is activiteit 1: We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!Dit is activiteit 1: We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00"),
-            dateFormatter.date(from: "23 12 2018")!: Activiteit(naam: "Hoy", omschrijving: "Dit is activiteit 2", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00"),
-            dateFormatter.date(from: "24 12 2018")!: Activiteit(naam: "Beste", omschrijving: "Dit is activiteit 3", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00"),
-            dateFormatter.date(from: "25 12 2018")!: Activiteit(naam: "Gey", omschrijving: "Dit is activiteit 4", leeftijdsgroep: "+16", startUur: "15:00", eindUur: "18:00")
+            dateFormatter.date(from: "22 12 2018")!: Activiteit(naam: "Dropping", omschrijving: "Dit is activiteit 1: We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus! Dit is activiteit 1: We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!", leeftijdsgroep: "+16", startUur: "19:00", eindUur: "22:00"),
+            dateFormatter.date(from: "23 12 2018")!: Activiteit(naam: "Pleinspelen", omschrijving: "Kom vandaag de nieuwste pleinspelen spelen op en kaap samen met je vrienden prijzen weg. Vergeet zeker je speelkleren niet! Kom vandaag de nieuwste pleinspelen spelen op en kaap samen met je vrienden prijzen weg. Vergeet zeker je speelkleren niet! Kom vandaag de nieuwste pleinspelen spelen op en kaap samen met je vrienden prijzen weg. Vergeet zeker je speelkleren niet!", leeftijdsgroep: "-12", startUur: "14:00", eindUur: "18:00"),
+            dateFormatter.date(from: "24 12 2018")!: Activiteit(naam: "Karaoke avond", omschrijving: "Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren. Wie zal de origineelste performance brengen? Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren. Wie zal de origineelste performance brengen? Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren. Wie zal de origineelste performance brengen?", leeftijdsgroep: "+12", startUur: "18:00", eindUur: "21:00"),
+            dateFormatter.date(from: "25 12 2018")!: Activiteit(naam: "Ontbijt op bed", omschrijving: "Vandaag zullen wij heel Vissenaken voorzien van heerlijke ontbijtjes. Er is veel werk te doen dus helpende handjes is zeker welkom. Vandaag zullen wij heel Vissenaken voorzien van heerlijke ontbijtjes. Er is veel werk te doen dus helpende handjes is zeker welkom. Vandaag zullen wij heel Vissenaken voorzien van heerlijke ontbijtjes. Er is veel werk te doen dus helpende handjes is zeker welkom.", leeftijdsgroep: "+16", startUur: "07:00", eindUur: "12:00")
 
         ]
     }
