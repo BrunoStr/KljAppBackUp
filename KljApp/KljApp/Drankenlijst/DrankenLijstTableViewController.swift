@@ -78,7 +78,7 @@ class DrankenLijstTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "editEmoji"{
+        if segue.identifier == "editLid"{
             let indexPath = tableView.indexPathForSelectedRow!
             let lid = leden[indexPath.row]
             //Deze tussenstap nodig anders kan hij niet deftig casten

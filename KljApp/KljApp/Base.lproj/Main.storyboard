@@ -566,6 +566,7 @@
                                     <outlet property="naamLabel" destination="op8-mF-MBA" id="JLh-Jc-Hd0"/>
                                     <outlet property="profielImg" destination="ofH-dy-s0w" id="Odw-rT-dRd"/>
                                     <outlet property="teBetalenLabel" destination="LYm-Av-H3S" id="d7l-hB-gOE"/>
+                                    <segue destination="Gub-GZ-4m4" kind="presentation" identifier="editLid" id="aXd-1S-npC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1178,4 +1179,7 @@
         <image name="instaLogo" width="300" height="300"/>
         <image name="kljPic1" width="1944" height="1296"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aXd-1S-npC"/>
+    </inferredMetricsTieBreakers>
 </document>

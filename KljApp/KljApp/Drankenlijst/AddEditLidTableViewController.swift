@@ -17,7 +17,7 @@ class AddEditLidTableViewController: UITableViewController {
 
         if let lid = lid {
             nameLabel.text = lid.naam
-            schuldLabel.text = String(format: "%.2f €", lid.teBetalen)
+            schuldLabel.text = String(format: "%.2f", lid.teBetalen)
             omschrijvingLabel.text = lid.omschrijving
         }
         
