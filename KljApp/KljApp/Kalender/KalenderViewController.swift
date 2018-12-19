@@ -14,6 +14,7 @@ class KalenderViewController: UIViewController {
     @IBOutlet weak var activiteitStartUur: UILabel!
     @IBOutlet weak var activiteitEindUur: UILabel!
     @IBOutlet weak var activiteitUrenStackView: UIStackView!
+    @IBOutlet weak var activiteitLeeftijd: UIButton!
     
     let todaysDate = Date()
     var eventsFromServer: [String:Activiteit] = [:]
@@ -39,8 +40,6 @@ class KalenderViewController: UIViewController {
                 print("KalenderView reloaded...")
             }
         }
-        
-        
         
         //Dit stelt de kleur van de LargeTitle in. Werkt niet via de attribute inspector (Bug)
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -102,7 +101,10 @@ class KalenderViewController: UIViewController {
                 if let activiteit = self.eventsFromServer[dateFormatter.string(from: cellState.date)] {
                     self.activiteitUrenStackView.isHidden = false
                     self.activiteitOmschrijving.isHidden = false
+                    self.activiteitLeeftijd.isHidden = false
+                    
                     self.activiteitNaam.text = activiteit.naam
+                    self.activiteitLeeftijd.setTitle(activiteit.leeftijdsgroep, for: .normal)
                     dateFormatter.dateFormat = "dd/MM/yyyy"
                     self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
                     self.activiteitStartUur.text = "\(activiteit.startUur) Uur"
@@ -116,6 +118,7 @@ class KalenderViewController: UIViewController {
                 self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
                 self.activiteitUrenStackView.isHidden = true
                 self.activiteitOmschrijving.isHidden = true
+                self.activiteitLeeftijd.isHidden = true
             }
             
         }else{

@@ -757,29 +757,47 @@
                                     </collectionView>
                                 </subviews>
                             </stackView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkN-RU-HRM">
-                                <rect key="frame" x="0.0" y="442" width="375" height="225"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hkN-RU-HRM">
+                                <rect key="frame" x="0.0" y="442" width="375" height="185"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-aV-ooC">
-                                        <rect key="frame" x="17.5" y="0.0" width="340" height="288.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-aV-ooC">
+                                        <rect key="frame" x="17.5" y="5" width="340" height="287.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-kJ-b7w">
-                                                <rect key="frame" x="143.5" y="0.0" width="53.5" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="btn-SF-Ast">
+                                                <rect key="frame" x="112.5" y="0.0" width="115.5" height="27"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtK-kJ-b7w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="27"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eS-Oz-KK1">
+                                                        <rect key="frame" x="61.5" y="0.0" width="54" height="27"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="27" id="Dx5-8r-uRd"/>
+                                                        </constraints>
+                                                        <state key="normal" title="button"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-c5-sak">
-                                                <rect key="frame" x="113.5" y="29" width="113" height="20"/>
+                                                <rect key="frame" x="113.5" y="34" width="113" height="16"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum:" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGe-SX-Bxg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="16"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTl-bd-VmI">
-                                                        <rect key="frame" x="57.5" y="0.0" width="55.5" height="20"/>
+                                                        <rect key="frame" x="57.5" y="0.0" width="55.5" height="16"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -818,9 +836,9 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-v2-3wU">
-                                                <rect key="frame" x="0.0" y="85.5" width="340" height="203"/>
-                                                <string key="text">Vandaag spelen we dropping. Lukt het jou om zo lang mogelijk uit de leiding zijn handen te blijven? Lukt het jou om zo lang mogelijk uit de handen van de leiding te vlijven? Er staat eeen dikke prijs op het spel! Vandaag spelen we dropping. Lukt het jou om zo lang mogelijk uit de leiding zijn handen te blijven? Lukt het jou om zo lang mogelijk uit de handen van de leiding te vlijven? Er staat eeen dikke prijs op het spel!</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-v2-3wU">
+                                                <rect key="frame" x="0.0" y="84.5" width="340" height="203"/>
+                                                <string key="text">Vandaag spelen we dropping. Lukt het jou om zo lang mogelijk uit de leiding zijn handen te blijven? Lukt het jou om zo lang mogelijk uit de handen van de leiding te vlijven? Er staat eeen dikke prijs op het spel! Vandaag spelen we dropping. Lukt het jou om zo lang mogelijk uit de leiding zijn  handen te blijven? Lukt het jou om zo lang mogelijk uit de handen van de leiding te vlijven? Er staat eeen dikke prijs op het spel!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -828,21 +846,20 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="340" id="0w0-at-BJW"/>
-                                            <constraint firstItem="CtK-kJ-b7w" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="EUL-7f-GS6"/>
                                             <constraint firstItem="aUQ-B3-Nav" firstAttribute="top" secondItem="wkK-aV-ooC" secondAttribute="top" constant="57" id="End-20-SpS"/>
                                             <constraint firstItem="aUQ-B3-Nav" firstAttribute="leading" secondItem="wkK-aV-ooC" secondAttribute="leading" constant="5" id="I5s-kR-FaI"/>
-                                            <constraint firstItem="z9z-c5-sak" firstAttribute="top" secondItem="wkK-aV-ooC" secondAttribute="top" constant="29" id="Nw8-Uk-FDA"/>
-                                            <constraint firstItem="z9z-c5-sak" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="O5Y-HV-zoU"/>
+                                            <constraint firstItem="z9z-c5-sak" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="bX6-LF-YhV"/>
                                             <constraint firstItem="6y7-v2-3wU" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="g5X-Tq-t4P"/>
                                             <constraint firstItem="aUQ-B3-Nav" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="gsL-02-SVn"/>
+                                            <constraint firstItem="btn-SF-Ast" firstAttribute="centerX" secondItem="wkK-aV-ooC" secondAttribute="centerX" id="td3-oy-VXt"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="wkK-aV-ooC" secondAttribute="bottom" constant="-3.5" id="G1m-2r-VGf"/>
+                                    <constraint firstAttribute="bottom" secondItem="wkK-aV-ooC" secondAttribute="bottom" constant="-63.5" id="G1m-2r-VGf"/>
                                     <constraint firstAttribute="trailing" secondItem="wkK-aV-ooC" secondAttribute="trailing" constant="17" id="TGm-Ia-7SY"/>
                                     <constraint firstItem="wkK-aV-ooC" firstAttribute="centerX" secondItem="hkN-RU-HRM" secondAttribute="centerX" id="fOp-Yt-E6Q"/>
-                                    <constraint firstItem="wkK-aV-ooC" firstAttribute="top" secondItem="hkN-RU-HRM" secondAttribute="top" id="h15-jo-LZ3"/>
+                                    <constraint firstItem="wkK-aV-ooC" firstAttribute="top" secondItem="hkN-RU-HRM" secondAttribute="top" constant="5" id="h15-jo-LZ3"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -870,6 +887,7 @@
                     <connections>
                         <outlet property="activiteitDatum" destination="CTl-bd-VmI" id="JPL-zz-TDO"/>
                         <outlet property="activiteitEindUur" destination="Y3W-Z5-vMp" id="ZAN-as-F0H"/>
+                        <outlet property="activiteitLeeftijd" destination="3eS-Oz-KK1" id="zhN-UI-tMZ"/>
                         <outlet property="activiteitNaam" destination="CtK-kJ-b7w" id="EPt-4a-bDL"/>
                         <outlet property="activiteitOmschrijving" destination="6y7-v2-3wU" id="hTb-zU-pdm"/>
                         <outlet property="activiteitStartUur" destination="Kse-MH-58p" id="Dex-Qa-kyE"/>
