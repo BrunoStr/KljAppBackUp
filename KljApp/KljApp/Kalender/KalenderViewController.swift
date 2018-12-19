@@ -13,6 +13,7 @@ class KalenderViewController: UIViewController {
     @IBOutlet weak var activiteitDatum: UILabel!
     @IBOutlet weak var activiteitStartUur: UILabel!
     @IBOutlet weak var activiteitEindUur: UILabel!
+    @IBOutlet weak var activiteitUrenStackView: UIStackView!
     
     let todaysDate = Date()
     var eventsFromServer: [String:Activiteit] = [:]
@@ -99,6 +100,7 @@ class KalenderViewController: UIViewController {
             
             if eventsFromServer.contains(where: {$0.key == dateFormatter.string(from: cellState.date)} ){
                 if let activiteit = self.eventsFromServer[dateFormatter.string(from: cellState.date)] {
+                    self.activiteitUrenStackView.isHidden = false
                     self.activiteitOmschrijving.isHidden = false
                     self.activiteitNaam.text = activiteit.naam
                     dateFormatter.dateFormat = "dd/MM/yyyy"
@@ -110,9 +112,9 @@ class KalenderViewController: UIViewController {
                 
             }else{
                 self.activiteitNaam.text = "Geen activiteit vandaag"
+                dateFormatter.dateFormat = "dd/MM/yyyy"
                 self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
-                self.activiteitStartUur.text = "/"
-                self.activiteitEindUur.text = "/"
+                self.activiteitUrenStackView.isHidden = true
                 self.activiteitOmschrijving.isHidden = true
             }
             

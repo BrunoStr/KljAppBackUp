@@ -575,8 +575,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDM-5j-Zbn">
                                 <rect key="frame" x="0.0" y="116" width="375" height="45"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="xEY-Le-18B">
-                                        <rect key="frame" x="117" y="10" width="141" height="25"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xEY-Le-18B">
+                                        <rect key="frame" x="131" y="10" width="113" height="25"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maand" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSa-Rc-a9C">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="25"/>
@@ -585,7 +585,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jaar" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-s4-0pS">
-                                                <rect key="frame" x="101.5" y="0.0" width="39.5" height="25"/>
+                                                <rect key="frame" x="73.5" y="0.0" width="39.5" height="25"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -696,19 +696,6 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtJ-c8-vbw">
-                                                            <rect key="frame" x="33" y="43" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greenDot" translatesAutoresizingMaskIntoConstraints="NO" id="JZV-Mz-m2a">
-                                                            <rect key="frame" x="51" y="63" width="7" height="6"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="6" id="2Vg-E0-dgh"/>
-                                                                <constraint firstAttribute="width" constant="7" id="lKt-6S-33j"/>
-                                                            </constraints>
-                                                        </imageView>
                                                         <view hidden="YES" alpha="0.40000000000000002" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afn-yp-O2V">
                                                             <rect key="frame" x="33" y="33" width="42" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -722,6 +709,19 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtJ-c8-vbw">
+                                                            <rect key="frame" x="33" y="43" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greenDot" translatesAutoresizingMaskIntoConstraints="NO" id="JZV-Mz-m2a">
+                                                            <rect key="frame" x="51" y="63" width="7" height="6"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="6" id="2Vg-E0-dgh"/>
+                                                                <constraint firstAttribute="width" constant="7" id="lKt-6S-33j"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
@@ -873,6 +873,7 @@
                         <outlet property="activiteitNaam" destination="CtK-kJ-b7w" id="EPt-4a-bDL"/>
                         <outlet property="activiteitOmschrijving" destination="6y7-v2-3wU" id="hTb-zU-pdm"/>
                         <outlet property="activiteitStartUur" destination="Kse-MH-58p" id="Dex-Qa-kyE"/>
+                        <outlet property="activiteitUrenStackView" destination="aUQ-B3-Nav" id="e2Q-FN-gn2"/>
                         <outlet property="calendarView" destination="R4f-mL-Bzz" id="VjW-cs-xoa"/>
                         <outlet property="jaarLabel" destination="k2o-s4-0pS" id="LDU-gE-gng"/>
                         <outlet property="maandLabel" destination="bSa-Rc-a9C" id="mBp-Ph-Ysa"/>
