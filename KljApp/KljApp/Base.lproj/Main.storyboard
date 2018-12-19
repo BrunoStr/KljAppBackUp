@@ -151,11 +151,13 @@
                     <navigationItem key="navigationItem" title="Home" id="Hxc-89-BWG"/>
                     <connections>
                         <outlet property="beschrijvingLabel" destination="iJb-K9-Pqw" id="sTg-M6-hlj"/>
+                        <outlet property="logoImg" destination="3cZ-ht-Lc3" id="C7U-S8-WYX"/>
                         <outlet property="luchtvochtigheidLabel" destination="0hb-Of-jRE" id="VyM-Wh-mle"/>
                         <outlet property="spinner" destination="xev-z7-hwF" id="UrW-Bx-ltk"/>
                         <outlet property="temperatuurLabel" destination="WuC-tH-vID" id="Ugb-sr-ryI"/>
                         <outlet property="weerImg" destination="upG-an-1d3" id="nZc-of-2dT"/>
                         <outlet property="weerView" destination="MT8-PE-F9g" id="54U-yG-JjU"/>
+                        <outlet property="welkomLabel" destination="BCF-aj-wOq" id="dEF-gS-hYV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsR-Rb-jtt" userLabel="First Responder" sceneMemberID="firstResponder"/>
