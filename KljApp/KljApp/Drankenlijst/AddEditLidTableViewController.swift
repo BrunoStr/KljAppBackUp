@@ -1,6 +1,6 @@
 import UIKit
 
-class AddEditLidTableViewController: UITableViewController {
+class AddEditLidTableViewController: UITableViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
 
     var lid:Lid!
     @IBOutlet weak var saveBtn: UIBarButtonItem!
@@ -8,7 +8,8 @@ class AddEditLidTableViewController: UITableViewController {
     @IBOutlet weak var nameLabel: UITextField!
     @IBOutlet weak var schuldLabel: UITextField!
     @IBOutlet weak var omschrijvingLabel: UITextField!
-    
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var wijzigBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -55,4 +56,41 @@ class AddEditLidTableViewController: UITableViewController {
         lid = Lid(naam: naam, teBetalen: schuld!, omschrijving: omschrijving)
         
     }
+    
+    @IBAction func wijzigBtnTapped(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        let alertController = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {action in
+                imagePicker.sourceType = .camera
+                self.present(imagePicker, animated: true, completion: nil)
+            })
+            alertController.addAction(cameraAction)
+        }
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            let libraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: {action in
+                imagePicker.sourceType = .photoLibrary
+                self.present(imagePicker, animated: true, completion: nil)
+            })
+            alertController.addAction(libraryAction)
+        }
+        
+        alertController.popoverPresentationController?.sourceView = sender
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            profileImg.image = selectedImage
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }
