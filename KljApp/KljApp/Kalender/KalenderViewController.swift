@@ -104,7 +104,8 @@ class KalenderViewController: UIViewController {
                     
                     self.activiteitNaam.text = activiteit.naam
                     self.activiteitLeeftijd.setTitle(activiteit.leeftijdsgroep, for: .normal)
-                    self.activiteitLeeftijd.backgroundColor = UIColor(displayP3Red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
+                    //self.activiteitLeeftijd.backgroundColor = UIColor(displayP3Red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
+                    self.activiteitLeeftijd.backgroundColor = UIColor(red: 139/255, green: 197/255, blue: 63/255, alpha: 1.0)
                     dateFormatter.dateFormat = "dd/MM/yyyy"
                     self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
                     self.activiteitStartUur.text = "\(activiteit.startUur) Uur"
