@@ -29,11 +29,17 @@ class AddEditLidTableViewController: UITableViewController {
         let schuld = schuldLabel.text ?? ""
         let omschrijving = omschrijvingLabel.text ?? ""
         
-        saveBtn.isEnabled = !naam.isEmpty && !schuld.isEmpty && !omschrijving.isEmpty
+        saveBtn.isEnabled = !naam.isEmpty && !schuld.isEmpty && isValidBedrag(bedrag: schuld) && !omschrijving.isEmpty
     }
     
     @IBAction func textInputChanged(_ sender: UITextField){
         updateSaveButtonState()
+    }
+    
+    func isValidBedrag(bedrag:String) -> Bool{
+        let bedragRegex = "[0-9]*.*[0-9]"
+        let bedragTest = NSPredicate(format: "SELF MATCHES %@", bedragRegex)
+        return bedragTest.evaluate(with: bedrag)
     }
     
     
