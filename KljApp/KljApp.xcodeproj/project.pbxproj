@@ -79,9 +79,9 @@
 			children = (
 				C4C015A521B964280091A851 /* HomeScreen */,
 				C490E73621C9069F007346E6 /* Kalender */,
+				C4B7C5CB21CA782700326128 /* Drankenlijst */,
 				C440646621B7CB3900B44BE4 /* AppDelegate.swift */,
 				C440646A21B7CB3900B44BE4 /* Main.storyboard */,
-				C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */,
 				C440646D21B7CB3A00B44BE4 /* Assets.xcassets */,
 				C440646F21B7CB3A00B44BE4 /* LaunchScreen.storyboard */,
 				C440647221B7CB3A00B44BE4 /* Info.plist */,
@@ -97,6 +97,14 @@
 				C4D601CF21C974A6009F92E5 /* Activiteit.swift */,
 			);
 			path = Kalender;
+			sourceTree = "<group>";
+		};
+		C4B7C5CB21CA782700326128 /* Drankenlijst */ = {
+			isa = PBXGroup;
+			children = (
+				C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */,
+			);
+			path = Drankenlijst;
 			sourceTree = "<group>";
 		};
 		C4C015A521B964280091A851 /* HomeScreen */ = {
