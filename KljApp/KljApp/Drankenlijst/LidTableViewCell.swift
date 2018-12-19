@@ -19,7 +19,7 @@ class LidTableViewCell: UITableViewCell {
     }
 
     func update(with lid:Lid){
-        profielImg.image = #imageLiteral(resourceName: "KljLogo")
+        profielImg.image = #imageLiteral(resourceName: "coins-1")
         naamLabel.text = lid.naam
         teBetalenLabel.text = String(format: "%.2f €", lid.teBetalen)
     }

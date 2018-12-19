@@ -531,10 +531,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofH-dy-s0w">
-                                            <rect key="frame" x="16" y="7" width="55" height="60"/>
+                                            <rect key="frame" x="16" y="7" width="55" height="55"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="60" id="UqT-Rt-b1d"/>
-                                                <constraint firstAttribute="width" constant="55" id="g4Q-to-mZ6"/>
+                                                <constraint firstAttribute="height" constant="55" id="13U-J1-glM"/>
+                                                <constraint firstAttribute="width" constant="55" id="XCt-hw-5UQ"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naam Lid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op8-mF-MBA">
@@ -544,22 +544,23 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-Av-H3S">
-                                            <rect key="frame" x="328" y="24" width="31" height="20.5"/>
+                                            <rect key="frame" x="328" y="24.5" width="31" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="ofH-dy-s0w" firstAttribute="centerY" secondItem="n0S-EL-Wro" secondAttribute="centerY" id="HjW-ls-icL"/>
+                                        <constraint firstItem="ofH-dy-s0w" firstAttribute="top" secondItem="n0S-EL-Wro" secondAttribute="topMargin" constant="-4" id="IJU-6l-tDv"/>
                                         <constraint firstItem="op8-mF-MBA" firstAttribute="centerY" secondItem="n0S-EL-Wro" secondAttribute="centerY" id="LLN-QR-oHg"/>
                                         <constraint firstItem="LYm-Av-H3S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="op8-mF-MBA" secondAttribute="trailing" constant="8" symbolic="YES" id="YDu-3A-CqO"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="LYm-Av-H3S" secondAttribute="trailing" id="eRC-4X-5Ft"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="LYm-Av-H3S" secondAttribute="bottom" constant="14" id="f3f-X8-ydA"/>
+                                        <constraint firstItem="op8-mF-MBA" firstAttribute="leading" secondItem="ofH-dy-s0w" secondAttribute="trailing" constant="8" symbolic="YES" id="lS0-S9-8cB"/>
                                         <constraint firstItem="LYm-Av-H3S" firstAttribute="centerY" secondItem="n0S-EL-Wro" secondAttribute="centerY" id="p2q-di-NBP"/>
-                                        <constraint firstItem="ofH-dy-s0w" firstAttribute="leading" secondItem="n0S-EL-Wro" secondAttribute="leading" constant="16" id="rbd-Q0-9Sn"/>
-                                        <constraint firstItem="op8-mF-MBA" firstAttribute="leading" secondItem="ofH-dy-s0w" secondAttribute="trailing" constant="8" symbolic="YES" id="sVR-T9-WEh"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="op8-mF-MBA" secondAttribute="bottom" constant="14" id="slN-8c-rxf"/>
-                                        <constraint firstItem="ofH-dy-s0w" firstAttribute="top" secondItem="n0S-EL-Wro" secondAttribute="topMargin" constant="-4" id="ylU-A5-20J"/>
+                                        <constraint firstItem="ofH-dy-s0w" firstAttribute="leading" secondItem="n0S-EL-Wro" secondAttribute="leadingMargin" id="yIZ-Sk-TzS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -634,7 +635,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bv: 20.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYM-wU-Uqw">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYM-wU-Uqw">
                                                     <rect key="frame" x="16" y="11" width="300" height="22"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
