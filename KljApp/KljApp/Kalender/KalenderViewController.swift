@@ -4,6 +4,8 @@ import JTAppleCalendar
 class KalenderViewController: UIViewController {
     
     let dateFormatter = DateFormatter()
+    let todaysDate = Date()
+    var eventsFromServer: [String:Activiteit] = [:]
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var maandLabel: UILabel!
@@ -15,10 +17,6 @@ class KalenderViewController: UIViewController {
     @IBOutlet weak var activiteitEindUur: UILabel!
     @IBOutlet weak var activiteitUrenStackView: UIStackView!
     @IBOutlet weak var activiteitLeeftijd: UIButton!
-    
-    let todaysDate = Date()
-    var eventsFromServer: [String:Activiteit] = [:]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +30,9 @@ class KalenderViewController: UIViewController {
                 let stringData = self.dateFormatter.string(from: date)
                 self.eventsFromServer[stringData] = event
             }
-            print("Events opgehaald...")
-            
             
             DispatchQueue.main.async {
                 self.calendarView.reloadData()
-                print("KalenderView reloaded...")
             }
         }
         
@@ -59,6 +54,7 @@ class KalenderViewController: UIViewController {
             self.handleViewsOfCalendar(from: visibleDates)
         }
         
+        //scroll naar huidige datum + selecteer deze
         calendarView.scrollToDate(Date(),animateScroll: true)
         calendarView.selectDates([ Date() ])
     }
