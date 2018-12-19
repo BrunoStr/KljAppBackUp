@@ -11,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Dit stelt de kleur in van de niet-geselecteerde items van de tabController
         UITabBar.appearance().unselectedItemTintColor = UIColor(displayP3Red: 255, green: 255, blue: 255, alpha: 1)
         
+        UIBarButtonItem.appearance().tintColor = UIColor.white
 
         return true
     }

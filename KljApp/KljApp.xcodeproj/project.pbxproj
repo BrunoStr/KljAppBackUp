@@ -20,6 +20,9 @@
 		C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430D21B9C11500A0858A /* ContactViewController.swift */; };
 		C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */; };
 		C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */; };
+		C4B7C5CD21CA910C00326128 /* Lid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7C5CC21CA910C00326128 /* Lid.swift */; };
+		C4B7C5CF21CA961C00326128 /* LidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7C5CE21CA961C00326128 /* LidTableViewCell.swift */; };
+		C4B7C5D121CA9DE000326128 /* AddEditLidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7C5D021CA9DE000326128 /* AddEditLidTableViewController.swift */; };
 		C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D601CF21C974A6009F92E5 /* Activiteit.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		C46D430D21B9C11500A0858A /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderCustomCell.swift; sourceTree = "<group>"; };
 		C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderViewController.swift; sourceTree = "<group>"; };
+		C4B7C5CC21CA910C00326128 /* Lid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lid.swift; sourceTree = "<group>"; };
+		C4B7C5CE21CA961C00326128 /* LidTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidTableViewCell.swift; sourceTree = "<group>"; };
+		C4B7C5D021CA9DE000326128 /* AddEditLidTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditLidTableViewController.swift; sourceTree = "<group>"; };
 		C4D4D33AE833FF6FEDFC380A /* Pods-KljApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KljApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KljApp/Pods-KljApp.release.xcconfig"; sourceTree = "<group>"; };
 		C4D601CF21C974A6009F92E5 /* Activiteit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activiteit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +108,10 @@
 		C4B7C5CB21CA782700326128 /* Drankenlijst */ = {
 			isa = PBXGroup;
 			children = (
+				C4B7C5CC21CA910C00326128 /* Lid.swift */,
 				C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */,
+				C4B7C5CE21CA961C00326128 /* LidTableViewCell.swift */,
+				C4B7C5D021CA9DE000326128 /* AddEditLidTableViewController.swift */,
 			);
 			path = Drankenlijst;
 			sourceTree = "<group>";
@@ -258,10 +267,13 @@
 			files = (
 				C440647921B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift in Sources */,
 				C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */,
+				C4B7C5D121CA9DE000326128 /* AddEditLidTableViewController.swift in Sources */,
 				C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */,
 				C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */,
 				C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */,
+				C4B7C5CF21CA961C00326128 /* LidTableViewCell.swift in Sources */,
 				C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */,
+				C4B7C5CD21CA910C00326128 /* Lid.swift in Sources */,
 				C440647F21B7F05000B44BE4 /* Weer.swift in Sources */,
 				C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */,
 				C440646721B7CB3900B44BE4 /* AppDelegate.swift in Sources */,
