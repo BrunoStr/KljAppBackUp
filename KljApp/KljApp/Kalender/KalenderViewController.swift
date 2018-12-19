@@ -22,7 +22,7 @@ class KalenderViewController: UIViewController {
         super.viewDidLoad()
         
         //Hier zetten we een timer zodat het lijkt dat we met server praten
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             let serverObjects = self.getServerEvents()
             
             //Hier converten we de dictionary [date:string] naar [string:string]
@@ -30,11 +30,16 @@ class KalenderViewController: UIViewController {
                 let stringData = self.dateFormatter.string(from: date)
                 self.eventsFromServer[stringData] = event
             }
+            print("Events opgehaald...")
+            
+            
+            DispatchQueue.main.async {
+                self.calendarView.reloadData()
+                print("KalenderView reloaded...")
+            }
         }
         
-        DispatchQueue.main.async {
-            self.calendarView.reloadData()
-        }
+        
         
         //Dit stelt de kleur van de LargeTitle in. Werkt niet via de attribute inspector (Bug)
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -46,7 +51,6 @@ class KalenderViewController: UIViewController {
     
     
     func setUpCalendarView(){
-        
         //Dit doen we om de insets/padding van de custom cell te verwijderen. Op die manier wanier we op een datum klikken zal er een volledige cirkel getoond worden en geen afgesneden cirkel
         calendarView.minimumLineSpacing = 0
         calendarView.minimumInteritemSpacing = 0
@@ -59,7 +63,7 @@ class KalenderViewController: UIViewController {
         calendarView.selectDates([ Date() ])
     }
     
-    func handleCellTextColor(view: JTAppleCell?, cellState: CellState){
+    func handleCellBackgroundColor(view: JTAppleCell?, cellState: CellState){
         guard let validCell = view as? KalenderCustomCell else {return}
         
         dateFormatter.dateFormat = "dd MM yyyy"
@@ -72,7 +76,6 @@ class KalenderViewController: UIViewController {
             validCell.today.isHidden = false
             validCell.selectedView.isHidden = true
         }else{
-            
             //Wanneer de cell niet geselecteerd is, zullen de dagen buiten de maand mindere opacity krijgen dan de dagen van de maand
             if cellState.isSelected {
                 validCell.dateLabel.textColor = .white
@@ -84,11 +87,8 @@ class KalenderViewController: UIViewController {
                     let outsidemonthcolor = UIColor(red: 255, green: 255, blue: 255, alpha: 0.3)
                     validCell.dateLabel.textColor = outsidemonthcolor
                 }
-                
             }
-            
         }
-
     }
     
     func handleCellSelected(view: JTAppleCell?, cellState: CellState){
@@ -99,6 +99,7 @@ class KalenderViewController: UIViewController {
             
             if eventsFromServer.contains(where: {$0.key == dateFormatter.string(from: cellState.date)} ){
                 if let activiteit = self.eventsFromServer[dateFormatter.string(from: cellState.date)] {
+                    self.activiteitOmschrijving.isHidden = false
                     self.activiteitNaam.text = activiteit.naam
                     dateFormatter.dateFormat = "dd/MM/yyyy"
                     self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
@@ -107,6 +108,12 @@ class KalenderViewController: UIViewController {
                     self.activiteitOmschrijving.text = activiteit.omschrijving
                 }
                 
+            }else{
+                self.activiteitNaam.text = "Geen activiteit vandaag"
+                self.activiteitDatum.text = dateFormatter.string(from: cellState.date)
+                self.activiteitStartUur.text = "/"
+                self.activiteitEindUur.text = "/"
+                self.activiteitOmschrijving.isHidden = true
             }
             
         }else{
@@ -116,6 +123,7 @@ class KalenderViewController: UIViewController {
 
     }
     
+    //Hier stellen we de naam van de maand en jaar in mbv de eerste visibledate
     func handleViewsOfCalendar(from visibleDates: DateSegmentInfo){
         
         let date = visibleDates.monthDates.first!.date
@@ -124,7 +132,42 @@ class KalenderViewController: UIViewController {
         jaarLabel.text = dateFormatter.string(from: date)
         
         dateFormatter.dateFormat = "MMMM"
-        maandLabel.text = dateFormatter.string(from: date)
+        let datum = dateFormatter.string(from: date)
+        
+        switch datum {
+        case "January":
+            maandLabel.text = "Januari"
+        case "February":
+            maandLabel.text = "Februari"
+        case "March":
+            maandLabel.text = "Maart"
+        case "April":
+            maandLabel.text = "April"
+        case "May":
+            maandLabel.text = "Mei"
+        case "June":
+            maandLabel.text = "Juni"
+        case "July":
+            maandLabel.text = "Juli"
+        case "August":
+            maandLabel.text = "Augustus"
+        case "September":
+            maandLabel.text = "September"
+        case "October":
+            maandLabel.text = "Oktober"
+        case "November":
+            maandLabel.text = "November"
+        case "December":
+            maandLabel.text = "December"
+            
+        default:
+            maandLabel.text = "Random"
+        }
+    }
+    
+    //Wanneer de datum een event bevat, geef dotevent weer
+    func handleEvents(cell:KalenderCustomCell, cellState:CellState){
+        cell.eventDot.isHidden = !eventsFromServer.contains{$0.key == dateFormatter.string(from: cellState.date)}
     }
     
 }
@@ -155,7 +198,8 @@ extension KalenderViewController: JTAppleCalendarViewDelegate {
         
         //Dit doen we zodat wanneer we een cell selecteren er geen andere random cell geselecteerd wordt (bug in library)
        handleCellSelected(view: cell, cellState: cellState)
-       handleCellTextColor(view: cell, cellState: cellState)
+       handleCellBackgroundColor(view: cell, cellState: cellState)
+       handleEvents(cell: cell, cellState: cellState)
         
         return cell
     }
@@ -170,15 +214,23 @@ extension KalenderViewController: JTAppleCalendarViewDelegate {
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         
+        let kalCell = cell as! KalenderCustomCell
+        
         handleCellSelected(view: cell, cellState: cellState)
-        handleCellTextColor(view: cell, cellState: cellState)
+        handleCellBackgroundColor(view: cell, cellState: cellState)
+        handleEvents(cell: kalCell, cellState: cellState)
+
 
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         
+        let kalCell = cell as! KalenderCustomCell
+        
         handleCellSelected(view: cell, cellState: cellState)
-        handleCellTextColor(view: cell, cellState: cellState)
+        handleCellBackgroundColor(view: cell, cellState: cellState)
+        handleEvents(cell: kalCell, cellState: cellState)
+
 
     }
     

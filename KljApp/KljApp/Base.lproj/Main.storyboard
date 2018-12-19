@@ -702,6 +702,13 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greenDot" translatesAutoresizingMaskIntoConstraints="NO" id="JZV-Mz-m2a">
+                                                            <rect key="frame" x="51" y="63" width="7" height="6"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="6" id="2Vg-E0-dgh"/>
+                                                                <constraint firstAttribute="width" constant="7" id="lKt-6S-33j"/>
+                                                            </constraints>
+                                                        </imageView>
                                                         <view hidden="YES" alpha="0.40000000000000002" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afn-yp-O2V">
                                                             <rect key="frame" x="33" y="33" width="42" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -718,16 +725,19 @@
                                                     </subviews>
                                                 </view>
                                                 <constraints>
+                                                    <constraint firstItem="JZV-Mz-m2a" firstAttribute="centerX" secondItem="ZtL-a0-EhO" secondAttribute="centerX" constant="0.5" id="0OY-08-ZM6"/>
                                                     <constraint firstItem="UtJ-c8-vbw" firstAttribute="centerY" secondItem="ZtL-a0-EhO" secondAttribute="centerY" id="7Rg-1z-zL0"/>
                                                     <constraint firstItem="IIw-Bb-j6h" firstAttribute="centerX" secondItem="ZtL-a0-EhO" secondAttribute="centerX" id="7ed-kC-Arl"/>
                                                     <constraint firstItem="afn-yp-O2V" firstAttribute="centerY" secondItem="ZtL-a0-EhO" secondAttribute="centerY" id="7iz-Li-uXZ"/>
                                                     <constraint firstItem="afn-yp-O2V" firstAttribute="centerX" secondItem="ZtL-a0-EhO" secondAttribute="centerX" id="GSc-Wc-JGV"/>
                                                     <constraint firstItem="IIw-Bb-j6h" firstAttribute="centerY" secondItem="ZtL-a0-EhO" secondAttribute="centerY" id="HJ3-94-Ibj"/>
                                                     <constraint firstItem="UtJ-c8-vbw" firstAttribute="centerX" secondItem="ZtL-a0-EhO" secondAttribute="centerX" id="O3z-ZU-pYk"/>
+                                                    <constraint firstItem="JZV-Mz-m2a" firstAttribute="centerY" secondItem="ZtL-a0-EhO" secondAttribute="centerY" constant="13" id="eK2-O9-JhA"/>
                                                 </constraints>
                                                 <size key="customSize" width="108" height="106"/>
                                                 <connections>
                                                     <outlet property="dateLabel" destination="UtJ-c8-vbw" id="n0Y-4C-moa"/>
+                                                    <outlet property="eventDot" destination="JZV-Mz-m2a" id="3T0-ZW-cTV"/>
                                                     <outlet property="selectedView" destination="IIw-Bb-j6h" id="ugN-X5-o0a"/>
                                                     <outlet property="today" destination="afn-yp-O2V" id="xKo-Wl-et1"/>
                                                 </connections>
@@ -946,6 +956,7 @@
         <image name="calendar" width="30" height="30"/>
         <image name="coins" width="30" height="30"/>
         <image name="fbLogo" width="224.63999938964844" height="224.63999938964844"/>
+        <image name="greenDot" width="28.647214889526367" height="28.647214889526367"/>
         <image name="home" width="30" height="30"/>
         <image name="instaLogo" width="300" height="300"/>
         <image name="kljPic1" width="1944" height="1296"/>
