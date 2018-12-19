@@ -17,6 +17,7 @@ class AddEditLidTableViewController: UITableViewController, UIImagePickerControl
 
 
         if let lid = lid {
+            navigationItem.title = "Wijzig \(lid.naam)"
             nameLabel.text = lid.naam
             schuldLabel.text = String(format: "%.2f", lid.teBetalen)
             omschrijvingLabel.text = lid.omschrijving

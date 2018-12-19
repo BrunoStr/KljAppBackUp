@@ -33,7 +33,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Welkom op de app van Klj Vissenaken!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCF-aj-wOq">
                                                 <rect key="frame" x="78" y="0.0" width="192" height="70"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -151,13 +151,13 @@
                     <navigationItem key="navigationItem" title="Home" id="Hxc-89-BWG"/>
                     <connections>
                         <outlet property="beschrijvingLabel" destination="iJb-K9-Pqw" id="sTg-M6-hlj"/>
-                        <outlet property="logoImg" destination="3cZ-ht-Lc3" id="C7U-S8-WYX"/>
+                        <outlet property="logoImg" destination="3cZ-ht-Lc3" id="Hxq-xL-IY3"/>
                         <outlet property="luchtvochtigheidLabel" destination="0hb-Of-jRE" id="VyM-Wh-mle"/>
                         <outlet property="spinner" destination="xev-z7-hwF" id="UrW-Bx-ltk"/>
                         <outlet property="temperatuurLabel" destination="WuC-tH-vID" id="Ugb-sr-ryI"/>
                         <outlet property="weerImg" destination="upG-an-1d3" id="nZc-of-2dT"/>
                         <outlet property="weerView" destination="MT8-PE-F9g" id="54U-yG-JjU"/>
-                        <outlet property="welkomLabel" destination="BCF-aj-wOq" id="dEF-gS-hYV"/>
+                        <outlet property="welkomLabel" destination="BCF-aj-wOq" id="Eff-WZ-9A0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsR-Rb-jtt" userLabel="First Responder" sceneMemberID="firstResponder"/>

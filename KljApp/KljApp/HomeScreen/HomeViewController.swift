@@ -18,27 +18,29 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIView.animate(withDuration: 1.0) {
-            let smallFrame = CGRect(x: 100, y: 0, width: 100, height: 100)
-            let smallFrame2 = CGRect(x: -100, y: 0, width: 100, height: 100)
+        UIView.animate(withDuration: 0.7) {
+            let smallFrame = CGRect(x: 100, y: -10, width: 100, height: 100)
+            let smallFrame2 = CGRect(x: -100, y: -10, width: 100, height: 100)
             self.logoImg.frame = smallFrame
             self.welkomLabel.frame = smallFrame2
         }
+        /*
         
-        UIView.animate(withDuration: 0.6, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             
             let rotateTransform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             
             self.weerView.transform = rotateTransform
         }) { (_) in
             
-            UIView.animate(withDuration: 0.4, animations: {
+            UIView.animate(withDuration: 0.5, animations: {
                 let rotateTransform2 = CGAffineTransform(scaleX: 1.0, y: 1.0)
                 self.weerView.transform = rotateTransform2
             
             })
-           
+ 
         }
+ */
         //Dit stelt de kleur van de LargeTitle in. Werkt niet via de attribute inspector (Bug)
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         // Hier zet men de kleur van de notificationbar naar wit, ookal zet men hier .black (Bug)
@@ -90,5 +92,7 @@ class HomeViewController: UIViewController {
             self.spinner.stopAnimating()
         }
     }
+    
+    
     
 }
