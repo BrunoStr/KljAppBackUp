@@ -7,20 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4011D558175782EBB3A8E427 /* Pods_KljApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538F1340848B37C021051E37 /* Pods_KljApp.framework */; };
 		C440646721B7CB3900B44BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440646621B7CB3900B44BE4 /* AppDelegate.swift */; };
 		C440646C21B7CB3900B44BE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440646A21B7CB3900B44BE4 /* Main.storyboard */; };
 		C440646E21B7CB3A00B44BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C440646D21B7CB3A00B44BE4 /* Assets.xcassets */; };
 		C440647121B7CB3A00B44BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C440646F21B7CB3A00B44BE4 /* LaunchScreen.storyboard */; };
 		C440647921B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */; };
-		C440647B21B7EF9E00B44BE4 /* KalenderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647A21B7EF9E00B44BE4 /* KalenderTableViewController.swift */; };
 		C440647D21B7EFB000B44BE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647C21B7EFB000B44BE4 /* HomeViewController.swift */; };
 		C440647F21B7F05000B44BE4 /* Weer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440647E21B7F05000B44BE4 /* Weer.swift */; };
 		C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440648021B7F6B200B44BE4 /* WeerController.swift */; };
 		C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430B21B9B48700A0858A /* OverOnsViewController.swift */; };
 		C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430D21B9C11500A0858A /* ContactViewController.swift */; };
+		C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */; };
+		C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */; };
+		C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D601CF21C974A6009F92E5 /* Activiteit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		538F1340848B37C021051E37 /* Pods_KljApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KljApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9433A8AD93258F9BE319F699 /* Pods-KljApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KljApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KljApp/Pods-KljApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C440646321B7CB3900B44BE4 /* KljApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KljApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C440646621B7CB3900B44BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C440646B21B7CB3900B44BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,12 +33,15 @@
 		C440647021B7CB3A00B44BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C440647221B7CB3A00B44BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrankenLijstTableViewController.swift; sourceTree = "<group>"; };
-		C440647A21B7EF9E00B44BE4 /* KalenderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderTableViewController.swift; sourceTree = "<group>"; };
 		C440647C21B7EFB000B44BE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C440647E21B7F05000B44BE4 /* Weer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weer.swift; sourceTree = "<group>"; };
 		C440648021B7F6B200B44BE4 /* WeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeerController.swift; sourceTree = "<group>"; };
 		C46D430B21B9B48700A0858A /* OverOnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverOnsViewController.swift; sourceTree = "<group>"; };
 		C46D430D21B9C11500A0858A /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderCustomCell.swift; sourceTree = "<group>"; };
+		C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderViewController.swift; sourceTree = "<group>"; };
+		C4D4D33AE833FF6FEDFC380A /* Pods-KljApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KljApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KljApp/Pods-KljApp.release.xcconfig"; sourceTree = "<group>"; };
+		C4D601CF21C974A6009F92E5 /* Activiteit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activiteit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4011D558175782EBB3A8E427 /* Pods_KljApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,8 @@
 			children = (
 				C440646521B7CB3900B44BE4 /* KljApp */,
 				C440646421B7CB3900B44BE4 /* Products */,
+				CF89E1F0B7EC4A4D0E5A71D6 /* Pods */,
+				D01E092FC1FDB58A99BC59CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,15 +78,25 @@
 			isa = PBXGroup;
 			children = (
 				C4C015A521B964280091A851 /* HomeScreen */,
+				C490E73621C9069F007346E6 /* Kalender */,
 				C440646621B7CB3900B44BE4 /* AppDelegate.swift */,
 				C440646A21B7CB3900B44BE4 /* Main.storyboard */,
-				C440647A21B7EF9E00B44BE4 /* KalenderTableViewController.swift */,
 				C440647821B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift */,
 				C440646D21B7CB3A00B44BE4 /* Assets.xcassets */,
 				C440646F21B7CB3A00B44BE4 /* LaunchScreen.storyboard */,
 				C440647221B7CB3A00B44BE4 /* Info.plist */,
 			);
 			path = KljApp;
+			sourceTree = "<group>";
+		};
+		C490E73621C9069F007346E6 /* Kalender */ = {
+			isa = PBXGroup;
+			children = (
+				C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */,
+				C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */,
+				C4D601CF21C974A6009F92E5 /* Activiteit.swift */,
+			);
+			path = Kalender;
 			sourceTree = "<group>";
 		};
 		C4C015A521B964280091A851 /* HomeScreen */ = {
@@ -90,6 +111,23 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
+		CF89E1F0B7EC4A4D0E5A71D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9433A8AD93258F9BE319F699 /* Pods-KljApp.debug.xcconfig */,
+				C4D4D33AE833FF6FEDFC380A /* Pods-KljApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D01E092FC1FDB58A99BC59CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538F1340848B37C021051E37 /* Pods_KljApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C440647521B7CB3A00B44BE4 /* Build configuration list for PBXNativeTarget "KljApp" */;
 			buildPhases = (
+				965DDF1B3BAFC3446F00AB7E /* [CP] Check Pods Manifest.lock */,
 				C440645F21B7CB3900B44BE4 /* Sources */,
 				C440646021B7CB3900B44BE4 /* Frameworks */,
 				C440646121B7CB3900B44BE4 /* Resources */,
+				B1C667DF949CB964F80336A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +196,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		965DDF1B3BAFC3446F00AB7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KljApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C667DF949CB964F80336A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KljApp/Pods-KljApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KljApp/Pods-KljApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C440645F21B7CB3900B44BE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -164,9 +251,11 @@
 				C440647921B7EF4A00B44BE4 /* DrankenLijstTableViewController.swift in Sources */,
 				C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */,
 				C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */,
-				C440647B21B7EF9E00B44BE4 /* KalenderTableViewController.swift in Sources */,
+				C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */,
 				C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */,
+				C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */,
 				C440647F21B7F05000B44BE4 /* Weer.swift in Sources */,
+				C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */,
 				C440646721B7CB3900B44BE4 /* AppDelegate.swift in Sources */,
 				C440647D21B7EFB000B44BE4 /* HomeViewController.swift in Sources */,
 			);
@@ -312,6 +401,7 @@
 		};
 		C440647621B7CB3A00B44BE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9433A8AD93258F9BE319F699 /* Pods-KljApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +420,7 @@
 		};
 		C440647721B7CB3A00B44BE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D4D33AE833FF6FEDFC380A /* Pods-KljApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
