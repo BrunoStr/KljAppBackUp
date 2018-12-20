@@ -298,22 +298,29 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="687"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="a7p-rJ-kid">
-                                        <rect key="frame" x="11" y="8" width="353" height="647"/>
+                                        <rect key="frame" x="11" y="8" width="353" height="707"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wie we zijn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-hA-Sh6">
-                                                <rect key="frame" x="125.5" y="0.0" width="102.5" height="46"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wie we zijn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-hA-Sh6">
+                                                <rect key="frame" x="121.5" y="0.0" width="110" height="46"/>
+                                                <color key="backgroundColor" red="0.5450980392" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="46" id="nRW-PZ-rIC"/>
+                                                    <constraint firstAttribute="height" constant="46" id="KXz-KB-7ej"/>
+                                                    <constraint firstAttribute="width" constant="110" id="cE5-zd-rrS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-Cl-9SP">
                                                 <rect key="frame" x="1" y="89" width="351" height="113"/>
                                                 <color key="backgroundColor" red="0.5450980392" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="113" id="boQ-Ph-wdh"/>
+                                                    <constraint firstAttribute="height" constant="113" id="iku-K5-zeD"/>
                                                 </constraints>
                                                 <string key="text">KLJ vissenaken is een jeugdbeweging die al meer dan 85 jaar actief is. De jeugdbeweging houdt zich vooral bezig met de jeugd een leuke tijd te bezorgen in de weekends.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -321,21 +328,29 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Fh-s8-9hZ">
-                                                <rect key="frame" x="0.0" y="245" width="353" height="90"/>
+                                                <rect key="frame" x="0.5" y="245" width="352" height="120"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kljPic1" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-yM-LBg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="90"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kljPic1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-yM-LBg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="BWO-1e-baQ"/>
+                                                            <constraint firstAttribute="width" constant="166" id="TCC-R4-jFS"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic3" translatesAutoresizingMaskIntoConstraints="NO" id="9gs-MY-wMN">
-                                                        <rect key="frame" x="186.5" y="0.0" width="166.5" height="90"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gs-MY-wMN">
+                                                        <rect key="frame" x="186" y="0.0" width="166" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="166" id="Amd-B7-dGv"/>
+                                                            <constraint firstAttribute="height" constant="120" id="LhM-Cm-eDr"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJy-O4-0r1">
-                                                <rect key="frame" x="4" y="378" width="345.5" height="136"/>
+                                                <rect key="frame" x="4" y="408" width="345.5" height="136"/>
                                                 <color key="backgroundColor" red="0.5450980392" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="136" id="Lvq-FU-XcQ"/>
+                                                    <constraint firstAttribute="height" constant="136" id="dh8-sa-1uo"/>
                                                 </constraints>
                                                 <string key="text">Daarnaast werkt KLJ Vissenaken ook aan dorpsactiviteiten om de goede relatie en samenwerking met de andere Vissenakers te behouden. Ons hoofddoel is echter sfeer, ambiance en plezier maken in ons geweldige dorpje.
 </string>
@@ -344,39 +359,46 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3tf-tG-Wau">
-                                                <rect key="frame" x="0.0" y="557" width="353" height="90"/>
+                                                <rect key="frame" x="0.5" y="587" width="352" height="120"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic6" translatesAutoresizingMaskIntoConstraints="NO" id="0Vh-bU-tPO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="166" id="dra-yV-qI5"/>
+                                                            <constraint firstAttribute="height" constant="120" id="pgV-gB-dzo"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljPic5" translatesAutoresizingMaskIntoConstraints="NO" id="ist-I0-uOY">
-                                                        <rect key="frame" x="186.5" y="0.0" width="166.5" height="90"/>
+                                                        <rect key="frame" x="186" y="0.0" width="166" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="4Te-A4-BkT"/>
+                                                            <constraint firstAttribute="width" constant="166" id="tea-jd-vmM"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="647" id="U1Z-eS-k6A"/>
-                                            <constraint firstItem="3tf-tG-Wau" firstAttribute="top" secondItem="a7p-rJ-kid" secondAttribute="top" constant="557" id="f4m-zv-jlQ"/>
-                                            <constraint firstItem="HrG-Cl-9SP" firstAttribute="leading" secondItem="a7p-rJ-kid" secondAttribute="leading" constant="1" id="oan-bz-KH7"/>
+                                            <constraint firstItem="HrG-Cl-9SP" firstAttribute="leading" secondItem="a7p-rJ-kid" secondAttribute="leading" constant="1" id="09M-KF-opf"/>
+                                            <constraint firstAttribute="height" constant="707" id="53k-4F-i4T"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="a7p-rJ-kid" secondAttribute="trailing" constant="11" id="Ala-3f-4uw"/>
-                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="leading" secondItem="4kN-cX-AjN" secondAttribute="leading" constant="11" id="Jrd-xJ-fnn"/>
-                                    <constraint firstAttribute="bottom" secondItem="a7p-rJ-kid" secondAttribute="bottom" constant="32" id="gps-XK-S4F"/>
-                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="centerX" secondItem="4kN-cX-AjN" secondAttribute="centerX" id="r6A-b8-A9T"/>
-                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="top" secondItem="4kN-cX-AjN" secondAttribute="topMargin" id="yXZ-Pt-oni"/>
+                                    <constraint firstAttribute="bottom" secondItem="a7p-rJ-kid" secondAttribute="bottom" constant="32" id="SBf-9x-Fhc"/>
+                                    <constraint firstAttribute="trailing" secondItem="a7p-rJ-kid" secondAttribute="trailing" constant="11" id="eUT-bc-Ojw"/>
+                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="top" secondItem="4kN-cX-AjN" secondAttribute="topMargin" id="gb4-8a-P3h"/>
+                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="centerX" secondItem="4kN-cX-AjN" secondAttribute="centerX" id="rYd-58-RTR"/>
+                                    <constraint firstItem="a7p-rJ-kid" firstAttribute="leading" secondItem="4kN-cX-AjN" secondAttribute="leading" constant="11" id="scf-Qd-AKk"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4kN-cX-AjN" firstAttribute="top" secondItem="RWG-Fa-CZJ" secondAttribute="top" id="OkL-hu-j2q"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="4kN-cX-AjN" secondAttribute="bottom" constant="-40" id="RW3-la-fiE"/>
-                            <constraint firstItem="4kN-cX-AjN" firstAttribute="leading" secondItem="SmD-DS-Ph9" secondAttribute="leading" id="wE2-mG-qVE"/>
-                            <constraint firstAttribute="trailing" secondItem="4kN-cX-AjN" secondAttribute="trailing" id="zki-Hy-oOf"/>
+                            <constraint firstAttribute="trailing" secondItem="4kN-cX-AjN" secondAttribute="trailing" id="2bg-jO-x8K"/>
+                            <constraint firstItem="4kN-cX-AjN" firstAttribute="leading" secondItem="SmD-DS-Ph9" secondAttribute="leading" id="5x0-jK-Tdb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4kN-cX-AjN" secondAttribute="bottom" constant="-40" id="WXc-q3-THS"/>
+                            <constraint firstItem="4kN-cX-AjN" firstAttribute="top" secondItem="RWG-Fa-CZJ" secondAttribute="top" id="uVn-XL-9Xv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RWG-Fa-CZJ"/>
                     </view>
