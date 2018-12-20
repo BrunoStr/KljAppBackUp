@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KljLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-tf-QOJ">
-                                <rect key="frame" x="30" y="155" width="315" height="280"/>
+                                <rect key="frame" x="50" y="155" width="275" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="op7-ma-f42"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Bruno Stroobants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-1l-0rR">
-                                <rect key="frame" x="76" y="626" width="223" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Bruno Stroobants ®" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-1l-0rR">
+                                <rect key="frame" x="69" y="626" width="237" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -36,9 +36,9 @@
                             <constraint firstItem="JFf-tf-QOJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F7E-MC-g9V"/>
                             <constraint firstItem="JFf-tf-QOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="Pbi-mY-nAM"/>
                             <constraint firstItem="Cyq-1l-0rR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YeU-cC-JWB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JFf-tf-QOJ" secondAttribute="trailing" constant="30" id="tRU-OK-i2q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JFf-tf-QOJ" secondAttribute="trailing" constant="50" id="tRU-OK-i2q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cyq-1l-0rR" secondAttribute="bottom" constant="20" id="uiA-9a-wDL"/>
-                            <constraint firstItem="JFf-tf-QOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zVV-o4-w92"/>
+                            <constraint firstItem="JFf-tf-QOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zVV-o4-w92"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
