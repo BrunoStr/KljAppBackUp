@@ -10,8 +10,27 @@ import UIKit
 
 class ContactViewController: UIViewController {
     
+    @IBOutlet weak var fbLogo: UIImageView!
+    @IBOutlet weak var instaLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIView.animate(withDuration: 1.0, delay:0.0 ,options: [.curveEaseInOut], animations: {
+            
+            let translate = CGAffineTransform(translationX: 0, y: -10)
+            
+            self.fbLogo.transform = translate
+            self.instaLogo.transform = translate
+            
+        }) { (_) in
+            
+            UIView.animate(withDuration: 1.0, delay:0.0, options:[.curveEaseInOut], animations: {
+                self.fbLogo.transform = CGAffineTransform.identity
+                self.instaLogo.transform = CGAffineTransform.identity
+                
+            })
+        }
 
     }
 

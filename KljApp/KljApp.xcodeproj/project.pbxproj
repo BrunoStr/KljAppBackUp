@@ -18,6 +18,8 @@
 		C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C440648021B7F6B200B44BE4 /* WeerController.swift */; };
 		C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430B21B9B48700A0858A /* OverOnsViewController.swift */; };
 		C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D430D21B9C11500A0858A /* ContactViewController.swift */; };
+		C4803D2221CBB4050053A636 /* LeidingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4803D2121CBB4050053A636 /* LeidingTableViewController.swift */; };
+		C4803D2421CBB85C0053A636 /* Leiding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4803D2321CBB85C0053A636 /* Leiding.swift */; };
 		C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */; };
 		C49FBD7E21C90FD5009CCC38 /* KalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */; };
 		C4B7C5CD21CA910C00326128 /* Lid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7C5CC21CA910C00326128 /* Lid.swift */; };
@@ -41,6 +43,8 @@
 		C440648021B7F6B200B44BE4 /* WeerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeerController.swift; sourceTree = "<group>"; };
 		C46D430B21B9B48700A0858A /* OverOnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverOnsViewController.swift; sourceTree = "<group>"; };
 		C46D430D21B9C11500A0858A /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		C4803D2121CBB4050053A636 /* LeidingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeidingTableViewController.swift; sourceTree = "<group>"; };
+		C4803D2321CBB85C0053A636 /* Leiding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leiding.swift; sourceTree = "<group>"; };
 		C49FBD7B21C90DE6009CCC38 /* KalenderCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderCustomCell.swift; sourceTree = "<group>"; };
 		C49FBD7D21C90FD5009CCC38 /* KalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalenderViewController.swift; sourceTree = "<group>"; };
 		C4B7C5CC21CA910C00326128 /* Lid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lid.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				C440648021B7F6B200B44BE4 /* WeerController.swift */,
 				C46D430B21B9B48700A0858A /* OverOnsViewController.swift */,
 				C46D430D21B9C11500A0858A /* ContactViewController.swift */,
+				C4803D2121CBB4050053A636 /* LeidingTableViewController.swift */,
+				C4803D2321CBB85C0053A636 /* Leiding.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 				C46D430E21B9C11500A0858A /* ContactViewController.swift in Sources */,
 				C4B7C5D121CA9DE000326128 /* AddEditLidTableViewController.swift in Sources */,
 				C46D430C21B9B48700A0858A /* OverOnsViewController.swift in Sources */,
+				C4803D2221CBB4050053A636 /* LeidingTableViewController.swift in Sources */,
 				C49FBD7C21C90DE6009CCC38 /* KalenderCustomCell.swift in Sources */,
 				C440648121B7F6B200B44BE4 /* WeerController.swift in Sources */,
 				C4B7C5CF21CA961C00326128 /* LidTableViewCell.swift in Sources */,
@@ -276,6 +283,7 @@
 				C4B7C5CD21CA910C00326128 /* Lid.swift in Sources */,
 				C440647F21B7F05000B44BE4 /* Weer.swift in Sources */,
 				C4D601D021C974A6009F92E5 /* Activiteit.swift in Sources */,
+				C4803D2421CBB85C0053A636 /* Leiding.swift in Sources */,
 				C440646721B7CB3900B44BE4 /* AppDelegate.swift in Sources */,
 				C440647D21B7EFB000B44BE4 /* HomeViewController.swift in Sources */,
 			);
