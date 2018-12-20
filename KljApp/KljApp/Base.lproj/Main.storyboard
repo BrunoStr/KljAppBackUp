@@ -1196,11 +1196,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LidCell" rowHeight="70" id="B5B-rg-3Oe" customClass="LidTableViewCell" customModule="KljApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LidCell" rowHeight="70" id="B5B-rg-3Oe" customClass="LidTableViewCell" customModule="KljApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B5B-rg-3Oe" id="n0S-EL-Wro">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofH-dy-s0w">
@@ -1217,7 +1217,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYm-Av-H3S">
-                                            <rect key="frame" x="328" y="24.5" width="31" height="20.5"/>
+                                            <rect key="frame" x="302" y="24.5" width="31" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -1755,7 +1755,7 @@
                                             <constraint firstAttribute="height" constant="176" id="TXI-ul-KuR"/>
                                             <constraint firstItem="wkK-aV-ooC" firstAttribute="leading" secondItem="hkN-RU-HRM" secondAttribute="leading" constant="18" id="eMH-LW-PTH"/>
                                             <constraint firstItem="wkK-aV-ooC" firstAttribute="top" secondItem="hkN-RU-HRM" secondAttribute="top" constant="5" id="h15-jo-LZ3"/>
-                                            <constraint firstAttribute="bottom" secondItem="wkK-aV-ooC" secondAttribute="bottom" constant="-117" id="tvA-PO-Ayc"/>
+                                            <constraint firstAttribute="bottom" secondItem="wkK-aV-ooC" secondAttribute="bottom" id="tvA-PO-Ayc"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
