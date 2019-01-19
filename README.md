@@ -1,6 +1,6 @@
 # KLJ Vissenaken App (Swift)
 
-This android application was made for Klj Vissenaken, a local youth movement located in Belgium.
+This Swift application was made for Klj Vissenaken, a local youth movement located in Belgium.
 Commissioned by Hogent for the Native apps IOS course.
 
 
