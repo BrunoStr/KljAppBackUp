@@ -1657,7 +1657,7 @@
                                         <rect key="frame" x="0.0" y="326" width="375" height="176"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-aV-ooC">
-                                                <rect key="frame" x="18" y="5" width="340" height="287.5"/>
+                                                <rect key="frame" x="17.5" y="5" width="340" height="287.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="btn-SF-Ast">
                                                         <rect key="frame" x="111" y="0.0" width="118.5" height="27"/>
@@ -1753,7 +1753,6 @@
                                             <constraint firstAttribute="trailing" secondItem="wkK-aV-ooC" secondAttribute="trailing" constant="17" id="5jL-tB-hcK"/>
                                             <constraint firstItem="wkK-aV-ooC" firstAttribute="centerX" secondItem="hkN-RU-HRM" secondAttribute="centerX" id="L5e-eP-q5g"/>
                                             <constraint firstAttribute="height" constant="176" id="TXI-ul-KuR"/>
-                                            <constraint firstItem="wkK-aV-ooC" firstAttribute="leading" secondItem="hkN-RU-HRM" secondAttribute="leading" constant="18" id="eMH-LW-PTH"/>
                                             <constraint firstItem="wkK-aV-ooC" firstAttribute="top" secondItem="hkN-RU-HRM" secondAttribute="top" constant="5" id="h15-jo-LZ3"/>
                                             <constraint firstAttribute="bottom" secondItem="wkK-aV-ooC" secondAttribute="bottom" id="tvA-PO-Ayc"/>
                                         </constraints>

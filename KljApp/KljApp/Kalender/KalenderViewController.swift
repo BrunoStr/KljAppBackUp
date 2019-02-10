@@ -63,7 +63,8 @@ class KalenderViewController: UIViewController {
         guard let validCell = view as? KalenderCustomCell else {return}
         
         dateFormatter.dateFormat = "dd MM yyyy"
-        //Ik vorm Date objecten om naar strings omdat Date minuten, uren, ... bezitten en string niet.
+        //Ik vorm Date objecten om naar strings omdat Date minuten, uren, region, ... bezitten en string niet.
+        //String objecten vergelijken is dus veiliger dan date objecten
         let todaysDateString = dateFormatter.string(from: todaysDate)
         let selectedDateString = dateFormatter.string(from: cellState.date)
         
@@ -183,7 +184,7 @@ extension KalenderViewController: JTAppleCalendarViewDataSource{
         dateFormatter.locale = Calendar.current.locale
         
         let startDate = dateFormatter.date(from: "01 12 2018")!
-        let endDate = dateFormatter.date(from: "01 01 2020")!
+        let endDate = dateFormatter.date(from: "01 01 2023")!
 
         
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, numberOfRows: 6, calendar: .current, generateInDates: .forFirstMonthOnly, generateOutDates: .off, firstDayOfWeek: .monday, hasStrictBoundaries: true)
@@ -217,11 +218,12 @@ extension KalenderViewController: JTAppleCalendarViewDelegate {
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         
-        let kalCell = cell as! KalenderCustomCell
+        //let kalCell = cell as! KalenderCustomCell
         
         handleCellSelected(view: cell, cellState: cellState)
         handleCellBackgroundColor(view: cell, cellState: cellState)
-        handleEvents(cell: kalCell, cellState: cellState)
+        //handleEvents(cell: kalCell, cellState: cellState)
+        cell?.bounce()
 
 
     }
@@ -251,11 +253,23 @@ extension KalenderViewController {
         dateFormatter.dateFormat = "dd MM yyyy"
         
         return [
-            dateFormatter.date(from: "22 12 2018")!: Activiteit(naam: "Dropping", omschrijving: "We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!", leeftijdsgroep: "+16", startUur: "19:00", eindUur: "22:00"),
-            dateFormatter.date(from: "23 12 2018")!: Activiteit(naam: "Pleinspelen", omschrijving: "Kom vandaag de nieuwste pleinspelen spelen en kaap samen met je vrienden de leukste prijzen weg. Vergeet zeker je speelkleren niet!", leeftijdsgroep: "-12", startUur: "14:00", eindUur: "18:00"),
-            dateFormatter.date(from: "24 12 2018")!: Activiteit(naam: "Karaoke avond", omschrijving: "Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren. Wie zal de origineelste performance brengen? Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren.", leeftijdsgroep: "+12", startUur: "18:00", eindUur: "21:00"),
-            dateFormatter.date(from: "25 12 2018")!: Activiteit(naam: "Ontbijt op bed", omschrijving: "Vandaag zullen wij heel Vissenaken voorzien van heerlijke ontbijtjes. Er is veel werk te doen dus helpende handjes is zeker welkom.", leeftijdsgroep: "+16", startUur: "07:00", eindUur: "12:00")
+            dateFormatter.date(from: "27 01 2019")!: Activiteit(naam: "Dropping", omschrijving: "We spelen dropping vandaag. Trek je stoute schoenen aan en ontsnap zo lang mogelijk van de leiding. Lukt het je om te ontsnappen staat er een prijs te winnen, zeker komen dus!", leeftijdsgroep: "+16", startUur: "19:00", eindUur: "22:00"),
+            dateFormatter.date(from: "28 01 2019")!: Activiteit(naam: "Pleinspelen", omschrijving: "Kom vandaag de nieuwste pleinspelen spelen en kaap samen met je vrienden de leukste prijzen weg. Vergeet zeker je speelkleren niet!", leeftijdsgroep: "-12", startUur: "14:00", eindUur: "18:00"),
+            dateFormatter.date(from: "20 01 2019")!: Activiteit(naam: "Karaoke avond", omschrijving: "Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren. Wie zal de origineelste performance brengen? Maak je klaar voor een avond vol dans en muziek. Vergeet ook zeker jullie stembanden niet in te smeren.", leeftijdsgroep: "+12", startUur: "18:00", eindUur: "21:00"),
+            dateFormatter.date(from: "21 01 2019")!: Activiteit(naam: "Ontbijt op bed", omschrijving: "Vandaag zullen wij heel Vissenaken voorzien van heerlijke ontbijtjes. Er is veel werk te doen dus helpende handjes is zeker welkom.", leeftijdsgroep: "+16", startUur: "07:00", eindUur: "12:00")
 
         ]
+    }
+}
+
+extension UIView {
+    func bounce(){
+        self.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        UIView.animate(
+            withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.3,
+            initialSpringVelocity:0.1,
+            options: UIView.AnimationOptions.beginFromCurrentState, animations: {
+            self.transform = CGAffineTransform(scaleX: 1, y: 1)
+        })
     }
 }

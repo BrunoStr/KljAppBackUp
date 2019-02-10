@@ -74,6 +74,7 @@ class DrankenLijstTableViewController: UITableViewController {
         if editingStyle == .delete {
             leden.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            Lid.saveToFile(leden: leden)
         }
     }
     

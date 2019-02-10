@@ -25,6 +25,7 @@ class WeerController {
                 print(error)
             }
         }
+        //request versturen
         task.resume()
     }
 }
